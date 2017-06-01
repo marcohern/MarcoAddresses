@@ -1,5 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[QueryCountryOptions]
-AS
+AS BEGIN
 	SELECT Id, Name FROM Countries
 	ORDER BY Name ASC
-RETURN 0
+
+	RETURN @@ROWCOUNT
+END

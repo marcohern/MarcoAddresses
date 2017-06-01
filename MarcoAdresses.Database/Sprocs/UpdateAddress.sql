@@ -6,7 +6,7 @@
 	@CityId INT,
 	@Zip INT,
 	@CustomerId INT
-AS
+AS BEGIN
 	UPDATE Addresses 
 	SET Type = @Type,
 		Address1 = @Address1,
@@ -16,5 +16,7 @@ AS
 		CustomerId = @CustomerId
 	WHERE Id = @Id
 
-	SELECT * FROM Addresses WHERE Id = @id
-RETURN 0
+	SELECT Id, Type, Address1, Address2, CityId, Zip, CustomerId
+	FROM Addresses WHERE Id = @Id
+	RETURN @@ROWCOUNT
+END

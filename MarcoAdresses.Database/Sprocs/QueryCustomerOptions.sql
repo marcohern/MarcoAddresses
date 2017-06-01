@@ -1,4 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[QueryCustomerOptions]
-AS
+AS BEGIN
 	SELECT Id, Name FROM Customers ORDER BY Name
-RETURN 0
+	RETURN @@ROWCOUNT
+END

@@ -7,13 +7,15 @@
 	@CustomerId INT
 AS BEGIN
 	DECLARE @Id INT
+	DECLARE @cnt INT
 
 	INSERT INTO Addresses([Type], Address1, Address2, CityId, Zip, CustomerId) VALUES
 	(@Type, @Address1, @Address2, @CityId, @Zip, @CustomerId)
 
 	SET @id = SCOPE_IDENTITY()
+	SET @cnt = @@ROWCOUNT
 
 	SELECT * FROM Addresses WHERE Id = @id
 
-	RETURN 0
+	RETURN @cnt
 END

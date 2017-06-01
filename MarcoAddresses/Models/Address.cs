@@ -20,6 +20,8 @@ namespace MarcoAddresses.Models
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public int CityId { get; set; }
+
+        public int CustomerId { get; set; }
         public int Zip { get; set; }
 
         public AddressType GetAddressType()

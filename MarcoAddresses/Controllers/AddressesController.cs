@@ -39,7 +39,7 @@ namespace MarcoAddresses.Controllers
         {
             Database db = DataAccess.GetDatabase();
             Address saved = db.ExecuteSprocAccessor<Address>("CreateAddress", new object[] {
-                value.Type, value.Address1, value.Address2, value.CityId, value.Zip
+                value.Type, value.Address1, value.Address2, value.CityId, value.Zip, value.CustomerId
             }).First();
             return saved;
         }
@@ -49,7 +49,7 @@ namespace MarcoAddresses.Controllers
         {
             Database db = DataAccess.GetDatabase();
             Address saved = db.ExecuteSprocAccessor<Address>("UpdateAddress", new object[] {
-                id, value.Type, value.Address1, value.Address2, value.CityId, value.Zip
+                id, value.Type, value.Address1, value.Address2, value.CityId, value.Zip, value.CustomerId
             }).First();
             return saved;
         }

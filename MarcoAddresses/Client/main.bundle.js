@@ -688,7 +688,7 @@ var AddressDetailComponent = (function () {
         var _this = this;
         this.loadingCities = true;
         if (this.clearValues) {
-            this.addressForm.controls.StateId.setValue('');
+            this.addressForm.controls.CityId.setValue('');
         }
         this.as.cityOptions(stateId).subscribe(function (cities) { return _this.cities = cities; });
     };

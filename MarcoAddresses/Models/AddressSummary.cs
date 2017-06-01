@@ -11,5 +11,6 @@ namespace MarcoAddresses.Models
         public string State { get; set; }
         public string Country { get; set; }
         public string Continent { get; set; }
+        public string Customer { get; set; }
     }
 }

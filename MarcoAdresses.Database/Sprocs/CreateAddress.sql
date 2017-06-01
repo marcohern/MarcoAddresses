@@ -3,12 +3,13 @@
 	@Address1 VARCHAR(128),
 	@Address2 VARCHAR(128),
 	@CityId INT,
-	@Zip INT
+	@Zip INT,
+	@CustomerId INT
 AS BEGIN
 	DECLARE @Id INT
 
-	INSERT INTO Addresses([Type], Address1, Address2, CityId, Zip) VALUES
-	(@Type, @Address1, @Address2, @CityId, @Zip)
+	INSERT INTO Addresses([Type], Address1, Address2, CityId, Zip, CustomerId) VALUES
+	(@Type, @Address1, @Address2, @CityId, @Zip, @CustomerId)
 
 	SET @id = SCOPE_IDENTITY()
 

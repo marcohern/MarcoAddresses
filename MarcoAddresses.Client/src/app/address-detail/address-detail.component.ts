@@ -107,7 +107,7 @@ export class AddressDetailComponent implements OnInit {
   getCities(stateId) {
     this.loadingCities = true;
     if (this.clearValues) {
-      this.addressForm.controls.StateId.setValue('');
+      this.addressForm.controls.CityId.setValue('');
     }
     this.as.cityOptions(stateId).subscribe(cities => this.cities = cities);
   }

@@ -18,6 +18,11 @@
       </md-input-container>
     </md-list-item>
     <md-list-item>
+      <md-select placeholder="Customer" formControlName="CustomerId">
+        <md-option *ngFor="let customer of customers" [value]="customer.Id">{{customer.Name}}</md-option>
+      </md-select>
+    </md-list-item>
+    <md-list-item>
       <md-select placeholder="Country" formControlName="CountryId" (change)="getStates(addressForm.value.CountryId)">
         <md-option *ngFor="let country of countries" [value]="country.Id">{{country.Name}}</md-option>
       </md-select>

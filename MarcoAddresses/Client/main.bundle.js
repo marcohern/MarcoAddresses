@@ -275,7 +275,7 @@ module.exports = module.exports.toString();
 /***/ 176:
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-button type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<pre>{{ addressForm.value | json}}</pre>"
+module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\">\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-button type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<pre>{{ addressForm.value | json}}</pre>"
 
 /***/ }),
 
@@ -365,6 +365,10 @@ var AddressesService = (function () {
     };
     AddressesService.prototype.cityOptions = function (stateId) {
         return this.rs.get('/CityOptions', stateId)
+            .map(function (r) { return r.json(); });
+    };
+    AddressesService.prototype.customerOptions = function () {
+        return this.rs.get('/CustomerOptions', null)
             .map(function (r) { return r.json(); });
     };
     return AddressesService;
@@ -621,8 +625,10 @@ var AddressDetailComponent = (function () {
             CountryId: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required],
             StateId: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required],
             CityId: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required],
-            Zip: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required]
+            Zip: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required],
+            CustomerId: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["h" /* Validators */].required]
         });
+        this.getCustomers();
         this.getCountries();
         var id = this.route.snapshot.params['id'];
         if (id) {
@@ -635,13 +641,21 @@ var AddressDetailComponent = (function () {
                     CountryId: address.CountryId,
                     StateId: address.StateId,
                     CityId: address.CityId,
-                    Zip: address.Zip
+                    Zip: address.Zip,
+                    CustomerId: address.CustomerId
                 });
                 _this.getStates(address.CountryId);
                 _this.getCities(address.StateId);
                 _this.clearValues = true;
             });
         }
+    };
+    AddressDetailComponent.prototype.getCustomers = function () {
+        var _this = this;
+        this.as.customerOptions().subscribe(function (customers) { return _this.getCustomersDone(customers); });
+    };
+    AddressDetailComponent.prototype.getCustomersDone = function (customers) {
+        this.customers = customers;
     };
     AddressDetailComponent.prototype.getCountries = function () {
         var _this = this;
@@ -691,7 +705,8 @@ var AddressDetailComponent = (function () {
             Address1: values.Address1,
             Address2: values.Address2,
             CityId: values.CityId,
-            Zip: values.Zip
+            Zip: values.Zip,
+            CustomerId: values.CustomerId
         };
         this.as.save(address).subscribe(function (result) {
             _this.router.navigate(['/addresses']);

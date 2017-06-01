@@ -17,6 +17,8 @@ export class AddressDetailComponent implements OnInit {
   countries:Option[];
   states:Option[];
   cities:Option[];
+  customers:Option[];
+
   loadingCountries:boolean = false;
   loadingStates:boolean = false;
   loadingCities:boolean = false;
@@ -37,9 +39,11 @@ export class AddressDetailComponent implements OnInit {
       CountryId: ['', Validators.required],
       StateId: ['', Validators.required],
       CityId: ['', Validators.required],
-      Zip: ['',Validators.required]
+      Zip: ['',Validators.required],
+      CustomerId: ['',Validators.required]
     });
 
+    this.getCustomers();
     this.getCountries();
     
     let id = this.route.snapshot.params['id'];
@@ -53,13 +57,22 @@ export class AddressDetailComponent implements OnInit {
           CountryId: address.CountryId,
           StateId: address.StateId,
           CityId: address.CityId,
-          Zip: address.Zip
+          Zip: address.Zip,
+          CustomerId: address.CustomerId
         });
         this.getStates(address.CountryId);
         this.getCities(address.StateId);
         this.clearValues = true;
       });
     }
+  }
+
+  getCustomers() {
+    this.as.customerOptions().subscribe(customers => this.getCustomersDone(customers));
+  }
+
+  getCustomersDone(customers) {
+    this.customers = customers;
   }
 
   getCountries() {
@@ -112,7 +125,8 @@ export class AddressDetailComponent implements OnInit {
       Address1: values.Address1,
       Address2: values.Address2,
       CityId: values.CityId,
-      Zip: values.Zip
+      Zip: values.Zip,
+      CustomerId: values.CustomerId
     };
 
     this.as.save(address).subscribe(result => {

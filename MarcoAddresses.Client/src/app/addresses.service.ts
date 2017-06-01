@@ -48,4 +48,9 @@ export class AddressesService {
     return this.rs.get('/CityOptions',stateId)
       .map((r:Request) => <Option[]>r.json());
   }
+
+  customerOptions(): Observable<Option[]> {
+    return this.rs.get('/CustomerOptions', null)
+      .map((r:Request) => <Option[]>r.json());
+  }
 }

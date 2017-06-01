@@ -6,5 +6,7 @@
 	[Address2] VARCHAR(128) NOT NULL DEFAULT '',
 	[CityId] INT NOT NULL,
 	[Zip] INT NOT NULL,
-	CONSTRAINT FK_Addresses_CityId FOREIGN KEY (CityId) REFERENCES Cities ([Id])
+	[CustomerId] INT NOT NULL,
+	CONSTRAINT FK_Addresses_CityId FOREIGN KEY (CityId) REFERENCES Cities ([Id]),
+	CONSTRAINT FK_Addresses_CustomerId FOREIGN KEY (CustomerId) REFERENCES Customers([Id])
 )

@@ -3,7 +3,7 @@ export interface Address {
     Type:string;
     Address1:string;
     Address2:string;
-    
+    CustomerId:number;
     CityId:number;
     Zip:number;
 

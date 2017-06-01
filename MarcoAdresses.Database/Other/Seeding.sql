@@ -12,6 +12,9 @@ Post-Deployment Script Template
 DELETE FROM Addresses
 GO
 
+DELETE FROM Customers
+GO
+
 DELETE FROM Cities
 GO
 
@@ -6944,15 +6947,28 @@ GO
 SET IDENTITY_INSERT Cities OFF
 GO
 
+SET IDENTITY_INSERT Customers ON
+GO
 
+INSERT INTO Customers(Id, Name, Email) VALUES
+(1, 'Robert Foster', 'rfoster@mail.com'),
+(2, 'Ivan Sakamanev', 'isakamanev@mail.com'),
+(3, 'Wai Soh Dim', 'wsohdim@mail.com'),
+(4, 'John Baxter', 'jbaxter@mail.com'),
+(5, 'Terrance Moonseed', 'tmoonseed@mail.com'),
+(6, 'Ken Oathcairn', 'koathcairn@mail.com')
+GO
+
+SET IDENTITY_INSERT Customers OFF
+GO
 
 
 SET IDENTITY_INSERT Addresses ON
 GO
 
-INSERT INTO Addresses(Id, Type, Address1, Address2, CityId, Zip) VALUES
-(1, 'M', 'Carrera 84aa #35-8','Simon Bolivar Laureles', 135, 11111),
-(2, 'L', '7030 Sandy Forks Rd.','Manhattan', 6224, 22222)
+INSERT INTO Addresses(Id, Type, Address1, Address2, CityId, Zip, CustomerId) VALUES
+(1, 'M', 'Carrera 84aa #35-8','Simon Bolivar Laureles', 135, 11111, 1),
+(2, 'L', '7030 Sandy Forks Rd.','Manhattan', 6224, 22222, 2)
 GO
 
 SET IDENTITY_INSERT Addresses OFF

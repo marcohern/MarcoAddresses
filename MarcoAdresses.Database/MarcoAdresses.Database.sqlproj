@@ -71,6 +71,8 @@
     <Build Include="Sprocs\QueryCountryOptions.sql" />
     <Build Include="Sprocs\QueryStateOptions.sql" />
     <Build Include="Sprocs\QueryCityOptions.sql" />
+    <Build Include="Tables\Customers.sql" />
+    <Build Include="Sprocs\QueryCustomerOptions.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Cities.sql" />

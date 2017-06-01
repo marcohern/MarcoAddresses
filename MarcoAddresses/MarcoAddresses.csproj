@@ -245,6 +245,7 @@
     <Compile Include="Controllers\AddressesController.cs" />
     <Compile Include="Controllers\CityOptionsController.cs" />
     <Compile Include="Controllers\CountryOptionsController.cs" />
+    <Compile Include="Controllers\CustomerOptionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StateOptionsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />

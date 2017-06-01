@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[States]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1,1),
+	[Name] VARCHAR(64) NOT NULL,
+	[Iso3] CHAR(3) NOT NULL UNIQUE,
+	[CountryId] INT NOT NULL,
+	CONSTRAINT FK_States_CountryId FOREIGN KEY (CountryId) REFERENCES Countries (Id)
+)

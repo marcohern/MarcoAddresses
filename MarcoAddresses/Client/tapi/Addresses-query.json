@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Type": "M",
+    "Address1": "Carrera 84aa #35-8",
+    "Address2": "Simon Bolivar, Laureles",
+    "CityId": 2,
+    "Zip": 123456,
+    "City":"Medellin",
+    "State":"Antioquia",
+    "Country":"Colombia",
+    "Continent":"America"
+  },
+  {
+    "Id": 2,
+    "Type": "M",
+    "Address1": "Carrera 1 #5-113",
+    "Address2": "El Rodadero",
+    "CityId": 2,
+    "Zip": 654321,
+    "City":"Medellin",
+    "State":"Antioquia",
+    "Country":"Colombia",
+    "Continent":"America"
+  }
+]

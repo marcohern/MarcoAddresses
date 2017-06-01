@@ -1,0 +1,38 @@
+<md-sidenav-container>
+    <md-sidenav #sidenav mode="side">
+        <md-list>
+            <md-list-item>
+                <button md-button [routerLink]="['/welcome']">
+                    <md-icon>assistant</md-icon>Welcome
+                </button>
+            </md-list-item>
+            <md-list-item>
+                <button md-button [routerLink]="['/addresses']">
+                    <md-icon>list</md-icon> Addresses
+                </button>
+            </md-list-item>
+            <md-list-item>
+                <button md-button>
+                    <md-icon>question_answer</md-icon> About
+                </button>
+            </md-list-item>
+            <md-list-item>
+                <button md-button>
+                    <md-icon>menu</md-icon> Manage address list
+                </button>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+    <md-toolbar color="primary">
+        <button md-button (click)="sidenav.toggle()">
+            <md-icon>menu</md-icon>
+        </button>
+        Marco Addresses
+    </md-toolbar>
+    <br/>
+    <md-progress-bar *ngIf="rs.isCalling()"
+          color="primary"
+          mode="indeterminate">
+      </md-progress-bar>
+    <router-outlet></router-outlet>
+</md-sidenav-container>

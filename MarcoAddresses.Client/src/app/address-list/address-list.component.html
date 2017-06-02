@@ -9,9 +9,9 @@
         <md-nav-list>
             <md-list-item class="taller" *ngFor="let address of addresses;let i=index;">
                 <md-icon md-list-icon *ngIf="!address.editing">place</md-icon>
-                <md-icon md-list-icon *ngIf="address.editing">edit</md-icon>
+                <md-icon md-list-icon *ngIf="address.editing">border_color</md-icon>
                 <h3 md-line *ngIf="!address.editing">
-                    {{address.Address1}} <button md-raised-button (click)="editInlineAddress(i)"><md-icon>edit</md-icon></button>
+                    {{address.Address1}} <button md-raised-button (click)="editInlineAddress(i)"><md-icon>border_color</md-icon></button>
                 </h3>
                 <md-input-container md-line *ngIf="address.editing">
                     <input mdInput placeholder="Address1" [(ngModel)]="addrEdit.Address1"/>
@@ -24,10 +24,10 @@
                 </md-input-container>
                 <md-progress-bar *ngIf="address.saving" md-line color="primary" mode="indeterminate"></md-progress-bar>
                
-                <button md-raised-button *ngIf="address.editing" color="primary" (click)="saveAddress(i)">Save</button>
-                <button md-raised-button *ngIf="address.editing" color="warn" (click)="cancelEditAddress(i)">Cancel</button>
-                <a md-raised-button *ngIf="!address.editing" color="primary" [routerLink]="['/address',address.Id]">Edit</a>
-                <button md-raised-button *ngIf="!address.editing" color="warn" (click)="deleteAddress(i)">Delete</button>
+                <button md-raised-button *ngIf="address.editing" color="primary" (click)="saveAddress(i)"><md-icon>save</md-icon>Save</button>
+                <button md-raised-button *ngIf="address.editing" color="warn" (click)="cancelEditAddress(i)"><md-icon>cancel</md-icon>Cancel</button>
+                <a md-raised-button *ngIf="!address.editing" color="primary" [routerLink]="['/address',address.Id]"><md-icon>edit</md-icon> Edit</a>
+                <button md-raised-button *ngIf="!address.editing" color="warn" (click)="deleteAddress(i)"><md-icon>delete</md-icon>Delete</button>
             </md-list-item>
         </md-nav-list>
     </md-card-content>

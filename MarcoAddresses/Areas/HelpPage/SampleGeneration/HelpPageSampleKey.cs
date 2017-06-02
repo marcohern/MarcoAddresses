@@ -11,7 +11,7 @@ namespace MarcoAddresses.Areas.HelpPage
     public class HelpPageSampleKey
     {
         /// <summary>
-        /// Creates a new <see cref="HelpPageSampleKey"/> based on media type.
+        /// Initializes a new instance of the <see cref="HelpPageSampleKey"/> class.
         /// </summary>
         /// <param name="mediaType">The media type.</param>
         public HelpPageSampleKey(MediaTypeHeaderValue mediaType)
@@ -21,14 +21,14 @@ namespace MarcoAddresses.Areas.HelpPage
                 throw new ArgumentNullException("mediaType");
             }
 
-            ActionName = String.Empty;
-            ControllerName = String.Empty;
+            ActionName = string.Empty;
+            ControllerName = string.Empty;
             MediaType = mediaType;
             ParameterNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         }
 
         /// <summary>
-        /// Creates a new <see cref="HelpPageSampleKey"/> based on media type and CLR type.
+        /// Initializes a new instance of the <see cref="HelpPageSampleKey"/> class.
         /// </summary>
         /// <param name="mediaType">The media type.</param>
         /// <param name="type">The CLR type.</param>
@@ -44,7 +44,8 @@ namespace MarcoAddresses.Areas.HelpPage
         }
 
         /// <summary>
-        /// Creates a new <see cref="HelpPageSampleKey"/> based on <see cref="SampleDirection"/>, controller name, action name and parameter names.
+        /// Initializes a new instance of the <see cref="HelpPageSampleKey"/> class.
+        /// Based on <see cref="SampleDirection"/>, controller name, action name and parameter names.
         /// </summary>
         /// <param name="sampleDirection">The <see cref="SampleDirection"/>.</param>
         /// <param name="controllerName">Name of the controller.</param>
@@ -56,14 +57,17 @@ namespace MarcoAddresses.Areas.HelpPage
             {
                 throw new InvalidEnumArgumentException("sampleDirection", (int)sampleDirection, typeof(SampleDirection));
             }
+
             if (controllerName == null)
             {
                 throw new ArgumentNullException("controllerName");
             }
+
             if (actionName == null)
             {
                 throw new ArgumentNullException("actionName");
             }
+
             if (parameterNames == null)
             {
                 throw new ArgumentNullException("parameterNames");
@@ -76,7 +80,7 @@ namespace MarcoAddresses.Areas.HelpPage
         }
 
         /// <summary>
-        /// Creates a new <see cref="HelpPageSampleKey"/> based on media type, <see cref="SampleDirection"/>, controller name, action name and parameter names.
+        /// Initializes a new instance of the <see cref="HelpPageSampleKey"/> class based on media type, <see cref="SampleDirection"/>, controller name, action name and parameter names.
         /// </summary>
         /// <param name="mediaType">The media type.</param>
         /// <param name="sampleDirection">The <see cref="SampleDirection"/>.</param>
@@ -153,14 +157,17 @@ namespace MarcoAddresses.Areas.HelpPage
             {
                 hashCode ^= MediaType.GetHashCode();
             }
+
             if (SampleDirection != null)
             {
                 hashCode ^= SampleDirection.GetHashCode();
             }
+
             if (ParameterType != null)
             {
                 hashCode ^= ParameterType.GetHashCode();
             }
+
             foreach (string parameterName in ParameterNames)
             {
                 hashCode ^= parameterName.ToUpperInvariant().GetHashCode();

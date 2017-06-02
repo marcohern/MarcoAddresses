@@ -1,44 +1,33 @@
-﻿using MarcoAddresses.Data;
-using MarcoAddresses.Models;
-using Microsoft.Practices.EnterpriseLibrary.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿// <copyright file="CountryOptionsController.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace MarcoAddresses.Controllers
 {
+    using MarcoAddresses.Data;
+    using MarcoAddresses.Models;
+    using Microsoft.Practices.EnterpriseLibrary.Data;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Net.Http;
+    using System.Web.Http;
+
+    /// <summary>
+    /// Country Options Controller
+    /// </summary>
     public class CountryOptionsController : ApiController
     {
-        // GET: api/Country
+        /// <summary>
+        /// Gets a list of Countries to populate a drop down
+        /// </summary>
+        /// <returns>List of Countries</returns>
         public IEnumerable<Option> Get()
         {
             Database db = DataAccess.GetDatabase();
             IEnumerable<Option> countries = db.ExecuteSprocAccessor<Option>("QueryCountryOptions");
             return countries;
-        }
-
-        // GET: api/Country/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Country
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Country/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Country/5
-        public void Delete(int id)
-        {
         }
     }
 }

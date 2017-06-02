@@ -17,6 +17,7 @@ namespace MarcoAddresses.Areas.HelpPage
             {
                 throw new ArgumentNullException("src");
             }
+
             Src = src;
         }
 

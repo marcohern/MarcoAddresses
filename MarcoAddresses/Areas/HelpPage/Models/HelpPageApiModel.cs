@@ -28,7 +28,7 @@ namespace MarcoAddresses.Areas.HelpPage.Models
         public ApiDescription ApiDescription { get; set; }
 
         /// <summary>
-        /// Gets or sets the <see cref="ParameterDescription"/> collection that describes the URI parameters for the API.
+        /// Gets the <see cref="ParameterDescription"/> collection that describes the URI parameters for the API.
         /// </summary>
         public Collection<ParameterDescription> UriParameters { get; private set; }
 

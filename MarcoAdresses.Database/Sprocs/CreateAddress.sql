@@ -15,7 +15,8 @@ AS BEGIN
 	SET @id = SCOPE_IDENTITY()
 	SET @cnt = @@ROWCOUNT
 
-	SELECT * FROM Addresses WHERE Id = @id
+	SELECT Id, [Type], Address1, Address2, CityId, Zip, CustomerId
+	FROM Addresses WHERE Id = @id
 
 	RETURN @cnt
 END

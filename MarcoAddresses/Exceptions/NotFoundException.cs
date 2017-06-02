@@ -1,36 +1,65 @@
-﻿using MarcoAddresses.Exceptions;
-using System;
-using System.Net;
-using System.Runtime.Serialization;
+﻿// <copyright file="NotFoundException.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
-namespace Exceptions
+namespace MarcoAddresses.Exceptions
 {
+    using System;
+    using System.Net;
+    using System.Runtime.Serialization;
+
+    /// <summary>
+    /// Thrown when a resource is not found. ie: Search for a user with an Id that does not exist.
+    /// </summary>
     [Serializable]
     public class NotFoundException : MarcoAddressesException
     {
-        protected override void SetHttpCode()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NotFoundException"/> class.
+        /// </summary>
+        public NotFoundException()
         {
             this.HttpCode = HttpStatusCode.NotFound;
         }
 
-        public NotFoundException()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NotFoundException"/> class.
+        /// </summary>
+        /// <param name="message">Exception Message</param>
+        public NotFoundException(string message)
+            : base(message)
         {
-            SetHttpCode();
+            this.HttpCode = HttpStatusCode.NotFound;
         }
 
-        public NotFoundException(string message) : base(message)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NotFoundException"/> class.
+        /// </summary>
+        /// <param name="message">Exception Message</param>
+        /// <param name="innerException">Inner Exception</param>
+        public NotFoundException(string message, Exception innerException)
+            : base(message, innerException)
         {
-            SetHttpCode();
+            this.HttpCode = HttpStatusCode.NotFound;
         }
 
-        public NotFoundException(string message, Exception innerException) : base(message, innerException)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NotFoundException"/> class.
+        /// </summary>
+        /// <param name="info">Serialization Info</param>
+        /// <param name="context">Streaming Context</param>
+        protected NotFoundException(SerializationInfo info, StreamingContext context)
+            : base(info, context)
         {
-            SetHttpCode();
+            this.HttpCode = HttpStatusCode.NotFound;
         }
 
-        protected NotFoundException(SerializationInfo info, StreamingContext context) : base(info, context)
+        /// <summary>
+        /// Set NotFound HTTP Status Code
+        /// </summary>
+        protected override void SetHttpCode()
         {
-            SetHttpCode();
+            this.HttpCode = HttpStatusCode.NotFound;
         }
     }
 }

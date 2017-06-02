@@ -1,10 +1,21 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿// <copyright file="BundleConfig.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace MarcoAddresses
 {
+    using System.Web;
+    using System.Web.Optimization;
+
+    /// <summary>
+    /// Bundle Configuration
+    /// </summary>
     public class BundleConfig
     {
+        /// <summary>
+        /// Register all bundles
+        /// </summary>
+        /// <param name="bundles">Bundles to register</param>
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {

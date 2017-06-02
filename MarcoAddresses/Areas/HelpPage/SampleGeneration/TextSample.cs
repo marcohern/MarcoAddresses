@@ -13,6 +13,7 @@ namespace MarcoAddresses.Areas.HelpPage
             {
                 throw new ArgumentNullException("text");
             }
+
             Text = text;
         }
 

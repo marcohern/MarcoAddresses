@@ -31,7 +31,7 @@ namespace MarcoAddresses.Models
                 case "A": return AddressType.Account;
                 case "M": return AddressType.Mailing;
                 case "L": return AddressType.Legal;
-                default:  return AddressType.None;
+                default: return AddressType.None;
             }
         }
     }

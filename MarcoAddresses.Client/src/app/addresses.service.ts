@@ -29,8 +29,13 @@ export class AddressesService {
       .map((r:Request) => <Address>r.json());
   }
 
-  save(address:Address): Observable<Address> {
-    return this.rs.save('/Addresses', address)
+  save(address:Address, loadscreen:boolean = true): Observable<Address> {
+    return this.rs.save('/Addresses', address, loadscreen)
+      .map((r:Request) => <Address>r.json());
+  }
+
+  update(address:Address, id:number, loadscreen:boolean = true): Observable<Address> {
+    return this.rs.update('/Addresses', address, id, loadscreen)
       .map((r:Request) => <Address>r.json());
   }
 

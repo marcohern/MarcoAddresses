@@ -226,7 +226,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".taller {\r\n    padding-top: 10px;\r\n}", ""]);
 
 // exports
 
@@ -282,14 +282,14 @@ module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(add
 /***/ 177:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n          <md-list-item *ngFor=\"let address of addresses;let i=index;\">\n            <md-icon md-list-icon>place</md-icon>\n            <h3 md-line>\n              {{address.Address1}}\n            </h3>\n            <p md-line>{{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}</p>\n            <a md-raised-button color=\"primary\" [routerLink]=\"['/address',address.Id]\">Edit</a>\n            <button md-raised-button color=\"warn\" (click)=\"deleteAddress(i)\">Delete</button>\n          </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
+module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item class=\"taller\" *ngFor=\"let address of addresses;let i=index;\" (click)=\"editInlineAddress(i)\">\n                <md-icon md-list-icon>place</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    {{address.Address1}}\n                </h3>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\"/>\n                </md-input-container>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\"/>\n                </md-input-container>\n                <md-progress-bar *ngIf=\"address.saving\" md-line color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\">Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\">Cancel</button>\n                <a md-raised-button *ngIf=\"!address.editing\" color=\"primary\" [routerLink]=\"['/address',address.Id]\">Edit</a>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\">Delete</button>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
 
 /***/ }),
 
 /***/ 178:
 /***/ (function(module, exports) {
 
-module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button>\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n</md-sidenav-container>"
+module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button>\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n</md-sidenav-container>"
 
 /***/ }),
 
@@ -351,8 +351,14 @@ var AddressesService = (function () {
         return this.rs.delete('/Addresses', id)
             .map(function (r) { return r.json(); });
     };
-    AddressesService.prototype.save = function (address) {
-        return this.rs.save('/Addresses', address)
+    AddressesService.prototype.save = function (address, loadscreen) {
+        if (loadscreen === void 0) { loadscreen = true; }
+        return this.rs.save('/Addresses', address, loadscreen)
+            .map(function (r) { return r.json(); });
+    };
+    AddressesService.prototype.update = function (address, id, loadscreen) {
+        if (loadscreen === void 0) { loadscreen = true; }
+        return this.rs.update('/Addresses', address, id, loadscreen)
             .map(function (r) { return r.json(); });
     };
     AddressesService.prototype.countryOptions = function () {
@@ -749,11 +755,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AddressListComponent = (function () {
     function AddressListComponent(as) {
         this.as = as;
+        this.lastEdited = -1;
     }
     AddressListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.as.list().subscribe(function (data) {
             _this.addresses = data;
+            _this.addresses.forEach(function (address) {
+                address.editing = false;
+                address.saving = false;
+            });
+        });
+    };
+    AddressListComponent.prototype.editInlineAddress = function (i) {
+        if (this.lastEdited >= 0) {
+            this.cancelEditAddress(this.lastEdited);
+        }
+        this.addrEdit = {
+            Id: this.addresses[i].Id,
+            Type: this.addresses[i].Type,
+            Address1: this.addresses[i].Address1,
+            Address2: this.addresses[i].Address2,
+            CityId: this.addresses[i].CityId,
+            Zip: this.addresses[i].Zip,
+            CustomerId: this.addresses[i].CustomerId
+        };
+        this.addresses[i].editing = true;
+        this.lastEdited = i;
+    };
+    AddressListComponent.prototype.cancelEditAddress = function (i) {
+        this.addresses[i].editing = false;
+    };
+    AddressListComponent.prototype.saveAddress = function (i) {
+        var _this = this;
+        this.addresses[i].Address1 = this.addrEdit.Address1;
+        this.addresses[i].Address2 = this.addrEdit.Address2;
+        this.addresses[i].saving = true;
+        this.as.update(this.addrEdit, this.addrEdit.Id, false).subscribe(function (address) {
+            _this.addresses[i].saving = false;
+            _this.addresses[i].editing = false;
+        }, function (error) {
+            _this.addresses[i].saving = false;
+            _this.addresses[i].editing = false;
         });
     };
     AddressListComponent.prototype.deleteAddress = function (i) {

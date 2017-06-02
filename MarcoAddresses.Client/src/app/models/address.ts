@@ -13,4 +13,7 @@ export interface Address {
     State?:string;
     Country?:string;
     Continent?:string;
+
+    editing?:boolean;
+    saving?:boolean;
 }

@@ -7,10 +7,11 @@
     </md-card-header>
     <md-card-content>
         <md-nav-list>
-            <md-list-item class="taller" *ngFor="let address of addresses;let i=index;" (click)="editInlineAddress(i)">
-                <md-icon md-list-icon>place</md-icon>
+            <md-list-item class="taller" *ngFor="let address of addresses;let i=index;">
+                <md-icon md-list-icon *ngIf="!address.editing">place</md-icon>
+                <md-icon md-list-icon *ngIf="address.editing">edit</md-icon>
                 <h3 md-line *ngIf="!address.editing">
-                    {{address.Address1}}
+                    {{address.Address1}} <button md-raised-button (click)="editInlineAddress(i)"><md-icon>edit</md-icon></button>
                 </h3>
                 <md-input-container md-line *ngIf="address.editing">
                     <input mdInput placeholder="Address1" [(ngModel)]="addrEdit.Address1"/>

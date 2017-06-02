@@ -26,6 +26,7 @@ export class AddressListComponent implements OnInit {
   }
 
   editInlineAddress(i) {
+    console.log("editInlineAddress",i);
     if (this.lastEdited >= 0) {
       this.cancelEditAddress(this.lastEdited);
     }

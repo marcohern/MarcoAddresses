@@ -29,6 +29,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AddressListComponent } from './address-list/address-list.component';
 import { AddressDetailComponent } from './address-detail/address-detail.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AddressDetailComponent } from './address-detail/address-detail.componen
     AppComponent,
     WelcomeComponent,
     AddressListComponent,
-    AddressDetailComponent
+    AddressDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserAnimationsModule,

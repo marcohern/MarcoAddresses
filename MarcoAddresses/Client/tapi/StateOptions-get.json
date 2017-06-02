@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 1,
+    "Name": "Amazonas"
+  },
+  {
+    "Id": 2,
+    "Name": "Antioquia"
+  },
+  {
+    "Id": 3,
+    "Name": "Arauca"
+  },
+  {
+    "Id": 4,
+    "Name": "Atlántico"
+  },
+  {
+    "Id": 6,
+    "Name": "Bogotá D.C."
+  },
+  {
+    "Id": 7,
+    "Name": "Bolivar"
+  },
+  {
+    "Id": 8,
+    "Name": "Boyacá"
+  },
+  {
+    "Id": 9,
+    "Name": "Caldas"
+  },
+  {
+    "Id": 10,
+    "Name": "Caquetá"
+  },
+  {
+    "Id": 11,
+    "Name": "Casanare"
+  },
+  {
+    "Id": 12,
+    "Name": "Cauca"
+  },
+  {
+    "Id": 13,
+    "Name": "Cesar"
+  },
+  {
+    "Id": 14,
+    "Name": "Chocó"
+  },
+  {
+    "Id": 5,
+    "Name": "Cordoba"
+  },
+  {
+    "Id": 15,
+    "Name": "Cundinamarca"
+  },
+  {
+    "Id": 16,
+    "Name": "Guainía"
+  },
+  {
+    "Id": 17,
+    "Name": "Guaviare"
+  },
+  {
+    "Id": 18,
+    "Name": "Huila"
+  },
+  {
+    "Id": 19,
+    "Name": "La Guajira"
+  },
+  {
+    "Id": 20,
+    "Name": "Magdalena"
+  },
+  {
+    "Id": 21,
+    "Name": "Meta"
+  },
+  {
+    "Id": 22,
+    "Name": "Nariño"
+  },
+  {
+    "Id": 23,
+    "Name": "Norte de Santander"
+  },
+  {
+    "Id": 24,
+    "Name": "Putumayo"
+  },
+  {
+    "Id": 25,
+    "Name": "Quindío"
+  },
+  {
+    "Id": 26,
+    "Name": "Risaralda"
+  },
+  {
+    "Id": 27,
+    "Name": "San Andres y Providencia"
+  },
+  {
+    "Id": 28,
+    "Name": "Santander"
+  },
+  {
+    "Id": 29,
+    "Name": "Sucre"
+  },
+  {
+    "Id": 30,
+    "Name": "Tolima"
+  },
+  {
+    "Id": 31,
+    "Name": "Valle del Cauca"
+  },
+  {
+    "Id": 32,
+    "Name": "Vaupés"
+  },
+  {
+    "Id": 33,
+    "Name": "Vichada"
+  }
+]

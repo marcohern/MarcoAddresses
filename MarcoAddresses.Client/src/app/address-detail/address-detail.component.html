@@ -18,7 +18,7 @@
       </md-input-container>
     </md-list-item>
     <md-list-item>
-      <md-select placeholder="Customer" formControlName="CustomerId">
+      <md-select placeholder="Customer" formControlName="CustomerId" required>
         <md-option *ngFor="let customer of customers" [value]="customer.Id">{{customer.Name}}</md-option>
       </md-select>
     </md-list-item>
@@ -39,8 +39,8 @@
       </md-input-container>
     </md-list-item>
     <md-list-item>
-      <button md-button type="submit">Save</button>
+      <button md-raised-button color="primary" type="submit">Save</button>
     </md-list-item>
   </md-list>
 </form>
-<pre>{{ addressForm.value | json}}</pre>
+<!--pre>{{ addressForm.value | json}}</pre-->

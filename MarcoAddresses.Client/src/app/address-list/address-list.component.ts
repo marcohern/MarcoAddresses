@@ -26,7 +26,6 @@ export class AddressListComponent implements OnInit {
   }
 
   editInlineAddress(i) {
-    console.log("editInlineAddress",i);
     if (this.lastEdited >= 0) {
       this.cancelEditAddress(this.lastEdited);
     }
@@ -61,14 +60,11 @@ export class AddressListComponent implements OnInit {
   }
 
   deleteAddress(i) {
-    
     let addr:Address = this.addresses[i];
     if (confirm("Delete this address: " + addr.Address1+ "," + addr.Address2 + ". " + addr.City + "?")) {
       this.as.delete(addr.Id).subscribe(data => {
-        console.log("deleteAddress deleted",data);
         this.addresses.splice(i,1);
       });
-      
     }
   }
 

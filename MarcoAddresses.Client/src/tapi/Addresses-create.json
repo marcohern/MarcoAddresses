@@ -1,0 +1,15 @@
+{
+    "Id": 1,
+    "Type": "M",
+    "Address1": "Carrera 84aa #35-8",
+    "Address2": "Simon Bolivar, Laureles",
+    "CityId": 135,
+    "Zip": 123456,
+    "CustomerId":1,
+    "City":"Medellin",
+    "State":"Antioquia",
+    "Country":"Colombia",
+    "Continent":"America",
+    "CountryId":1,
+    "StateId":2
+}

@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 104;
+webpackEmptyContext.id = 105;
 
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(75);
 
 
 
@@ -35,7 +35,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62,8 +62,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(178),
-        styles: [__webpack_require__(173)]
+        template: __webpack_require__(181),
+        styles: [__webpack_require__(175)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -73,25 +73,26 @@ var _a;
 
 /***/ }),
 
-/***/ 115:
+/***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__request_service__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__addresses_service__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_material__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_hammerjs__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_material__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_hammerjs__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routes__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__address_list_address_list_component__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__address_detail_address_detail_component__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routes__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__address_list_address_list_component__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__address_detail_address_detail_component__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__about_about_component__ = __webpack_require__(71);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -99,6 +100,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -124,7 +126,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_11__welcome_welcome_component__["a" /* WelcomeComponent */],
             __WEBPACK_IMPORTED_MODULE_12__address_list_address_list_component__["a" /* AddressListComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__address_detail_address_detail_component__["a" /* AddressDetailComponent */]
+            __WEBPACK_IMPORTED_MODULE_13__address_detail_address_detail_component__["a" /* AddressDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__about_about_component__["a" /* AboutComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
@@ -155,15 +158,16 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 116:
+/***/ 117:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_about_component__ = __webpack_require__(71);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutes; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -176,8 +180,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__["a" /* WelcomeComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */] },
     { path: 'addresses', component: __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__["a" /* AddressListComponent */] },
     { path: 'address/add', component: __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__["a" /* AddressDetailComponent */] },
     { path: 'address/:id', component: __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__["a" /* AddressDetailComponent */] },
@@ -200,10 +206,10 @@ AppRoutes = __decorate([
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -218,10 +224,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 172:
+/***/ 173:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(12)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 174:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -236,10 +260,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 173:
+/***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -254,10 +278,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 174:
+/***/ 176:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(12)(false);
 // imports
 
 
@@ -272,38 +296,45 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 176:
-/***/ (function(module, exports) {
-
-module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\">\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-button type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<pre>{{ addressForm.value | json}}</pre>"
-
-/***/ }),
-
-/***/ 177:
-/***/ (function(module, exports) {
-
-module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item class=\"taller\" *ngFor=\"let address of addresses;let i=index;\" (click)=\"editInlineAddress(i)\">\n                <md-icon md-list-icon>place</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    {{address.Address1}}\n                </h3>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\"/>\n                </md-input-container>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\"/>\n                </md-input-container>\n                <md-progress-bar *ngIf=\"address.saving\" md-line color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\">Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\">Cancel</button>\n                <a md-raised-button *ngIf=\"!address.editing\" color=\"primary\" [routerLink]=\"['/address',address.Id]\">Edit</a>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\">Delete</button>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
-
-/***/ }),
-
 /***/ 178:
 /***/ (function(module, exports) {
 
-module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button>\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n</md-sidenav-container>"
+module.exports = "<md-card>\n  <h2>About Marco Addresses</h2>\n  <div style=\"float:left;width:128px;margin:4px;\">\n    <md-icon style=\"font-size:128px\">computer</md-icon>\n  </div>\n  <p>Made by Marco Hernandez, GAP, 2017.</p>\n  <p>\n    <a md-raised-button color=\"accent\" href=\"mailto:mhernandez@growthaccelerationpartners.com\">mhernandez@growthaccelerationpartners.com</a>\n  </p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n</md-card>"
 
 /***/ }),
 
 /***/ 179:
 /***/ (function(module, exports) {
 
+module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\" required>\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<!--pre>{{ addressForm.value | json}}</pre-->\n"
+
+/***/ }),
+
+/***/ 180:
+/***/ (function(module, exports) {
+
+module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item class=\"taller\" *ngFor=\"let address of addresses;let i=index;\">\n                <md-icon md-list-icon *ngIf=\"!address.editing\">place</md-icon>\n                <md-icon md-list-icon *ngIf=\"address.editing\">border_color</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    {{address.Address1}} <button md-raised-button (click)=\"editInlineAddress(i)\"><md-icon>border_color</md-icon></button>\n                </h3>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\"/>\n                </md-input-container>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\"/>\n                </md-input-container>\n                <md-progress-bar *ngIf=\"address.saving\" md-line color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\"><md-icon>save</md-icon>Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\"><md-icon>cancel</md-icon>Cancel</button>\n                <a md-raised-button *ngIf=\"!address.editing\" color=\"primary\" [routerLink]=\"['/address',address.Id]\"><md-icon>edit</md-icon> Edit</a>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\"><md-icon>delete</md-icon>Delete</button>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
+
+/***/ }),
+
+/***/ 181:
+/***/ (function(module, exports) {
+
+module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/about']\">\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n</md-sidenav-container>"
+
+/***/ }),
+
+/***/ 182:
+/***/ (function(module, exports) {
+
 module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Welcome</h2></md-card-title>\n    </md-card-header>\n    <md-card-content>\n        <p>\n        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n        bred for hunting.\n        </p>\n        <p></p>\n        <p></p>\n        <p></p>\n        <p></p>\n        <p></p>\n    </md-card-content>\n</md-card>"
 
 /***/ }),
 
-/***/ 230:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(105);
+module.exports = __webpack_require__(106);
 
 
 /***/ }),
@@ -403,7 +434,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(75);
 /* unused harmony export Method */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RequestService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -594,6 +625,42 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AboutComponent = (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    return AboutComponent;
+}());
+AboutComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+        selector: 'app-about',
+        template: __webpack_require__(178),
+        styles: [__webpack_require__(172)]
+    }),
+    __metadata("design:paramtypes", [])
+], AboutComponent);
+
+//# sourceMappingURL=about.component.js.map
+
+/***/ }),
+
+/***/ 72:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__addresses_service__ = __webpack_require__(39);
@@ -723,8 +790,8 @@ var AddressDetailComponent = (function () {
 AddressDetailComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-address-detail',
-        template: __webpack_require__(176),
-        styles: [__webpack_require__(171)]
+        template: __webpack_require__(179),
+        styles: [__webpack_require__(173)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _d || Object])
 ], AddressDetailComponent);
@@ -734,7 +801,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 72:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -804,7 +871,6 @@ var AddressListComponent = (function () {
         var addr = this.addresses[i];
         if (confirm("Delete this address: " + addr.Address1 + "," + addr.Address2 + ". " + addr.City + "?")) {
             this.as.delete(addr.Id).subscribe(function (data) {
-                console.log("deleteAddress deleted", data);
                 _this.addresses.splice(i, 1);
             });
         }
@@ -814,8 +880,8 @@ var AddressListComponent = (function () {
 AddressListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-address-list',
-        template: __webpack_require__(177),
-        styles: [__webpack_require__(172)]
+        template: __webpack_require__(180),
+        styles: [__webpack_require__(174)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__addresses_service__["a" /* AddressesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__addresses_service__["a" /* AddressesService */]) === "function" && _a || Object])
 ], AddressListComponent);
@@ -825,7 +891,7 @@ var _a;
 
 /***/ }),
 
-/***/ 73:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -851,8 +917,8 @@ var WelcomeComponent = (function () {
 WelcomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-welcome',
-        template: __webpack_require__(179),
-        styles: [__webpack_require__(174)]
+        template: __webpack_require__(182),
+        styles: [__webpack_require__(176)]
     }),
     __metadata("design:paramtypes", [])
 ], WelcomeComponent);
@@ -861,7 +927,7 @@ WelcomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -886,5 +952,5 @@ var environment = {
 
 /***/ })
 
-},[230]);
+},[233]);
 //# sourceMappingURL=main.bundle.js.map

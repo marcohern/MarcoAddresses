@@ -1,4 +1,4 @@
-﻿// <copyright file="Option.cs" company="PlaceholderCompany">
+﻿// <copyright file="Customer.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 
@@ -10,17 +10,23 @@ namespace MarcoAddresses.Models
     using System.Web;
 
     /// <summary>
-    /// Option for Dropdown List
+    /// Represents a Customer Record
     /// </summary>
-    public class Option
+    public class Customer
     {
         /// <summary>
-        /// Id or Value of the option
+        /// Gets or sets Customer Identifier
         /// </summary>
-        public int Id { get; set; }
+        public int? Id { get; set; }
+
         /// <summary>
-        /// Name or display textg of the option
+        /// Gets or sets Customer Name
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Gets or sets Email Address
+        /// </summary>
+        public string Email { get; set; }
     }
 }

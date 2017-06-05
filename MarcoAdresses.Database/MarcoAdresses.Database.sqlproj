@@ -73,6 +73,11 @@
     <Build Include="Sprocs\QueryCityOptions.sql" />
     <Build Include="Tables\Customers.sql" />
     <Build Include="Sprocs\QueryCustomerOptions.sql" />
+    <Build Include="Sprocs\QueryCustomers.sql" />
+    <Build Include="Sprocs\GetCustomer.sql" />
+    <Build Include="Sprocs\CreateCustomer.sql" />
+    <Build Include="Sprocs\UpdateCustomer.sql" />
+    <Build Include="Sprocs\DeleteCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Cities.sql" />

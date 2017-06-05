@@ -30,6 +30,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AddressListComponent } from './address-list/address-list.component';
 import { AddressDetailComponent } from './address-detail/address-detail.component';
 import { AboutComponent } from './about/about.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AboutComponent } from './about/about.component';
     WelcomeComponent,
     AddressListComponent,
     AddressDetailComponent,
-    AboutComponent
+    AboutComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserAnimationsModule,

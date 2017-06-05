@@ -240,6 +240,7 @@
     <Compile Include="Controllers\CityOptionsController.cs" />
     <Compile Include="Controllers\CountryOptionsController.cs" />
     <Compile Include="Controllers\CustomerOptionsController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StateOptionsController.cs" />
     <Compile Include="Data\DataAccess.cs" />
@@ -255,6 +256,7 @@
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\AddressDetail.cs" />
     <Compile Include="Models\AddressSummary.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Option.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\ChallengeResult.cs" />

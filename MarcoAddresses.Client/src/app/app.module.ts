@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { RequestService } from './request.service';
 import { AddressesService } from './addresses.service';
+import { CustomerService } from './customer.service';
 
 import {
   MdMenuModule,
@@ -19,7 +20,8 @@ import {
   MdProgressBarModule,
   MdDialogModule,
   MdInputModule,
-  MdSelectModule
+  MdSelectModule,
+  MdSnackBarModule
 } from '@angular/material';
 import 'hammerjs';
 
@@ -31,6 +33,7 @@ import { AddressListComponent } from './address-list/address-list.component';
 import { AddressDetailComponent } from './address-detail/address-detail.component';
 import { AboutComponent } from './about/about.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 
 
 @NgModule({
@@ -40,7 +43,8 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     AddressListComponent,
     AddressDetailComponent,
     AboutComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerDetailComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -61,9 +65,10 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
     MdProgressBarModule,
     MdDialogModule,
     MdInputModule,
-    MdSelectModule
+    MdSelectModule,
+    MdSnackBarModule
   ],
-  providers: [RequestService,AddressesService],
+  providers: [RequestService,AddressesService, CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

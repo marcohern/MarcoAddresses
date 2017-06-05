@@ -140,8 +140,8 @@ export class RequestService {
   }
 
   public save(uri: string, body: any, loadscreen: boolean = true): Observable<any> {
-    if (body.id) {
-      return this.update(uri, body, body.id, loadscreen);
+    if (body.Id) {
+      return this.update(uri, body, body.Id, loadscreen);
     } else {
       return this.create(uri, body, loadscreen);
     }

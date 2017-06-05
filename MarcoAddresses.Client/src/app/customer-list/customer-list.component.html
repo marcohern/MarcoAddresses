@@ -1,3 +1,44 @@
-<p>
-  customer-list works!
-</p>
+<md-card>
+  <md-card-header>
+    <md-card-title><h2>Customer List</h2></md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <a md-raised-button color="primary" [routerLink]="['/customer/add']">Add</a>
+    <md-nav-list>
+        <md-list-item *ngFor="let customer of customers;let i = index;">
+          <md-icon md-list-icon *ngIf="!customer.editing">face</md-icon>
+          <md-icon md-list-icon *ngIf="customer.editing">border_color</md-icon>
+
+          <h3 md-line *ngIf="!customer.editing">
+              {{customer.Name}}
+          </h3>
+          <p md-line *ngIf="!customer.editing">
+              {{customer.Email}}
+          </p>
+
+          <div md-line *ngIf="customer.editing">
+            <md-input-container>
+              <input mdInput placeholder="Name" [(ngModel)]="custEdit.Name" required/>
+            </md-input-container>
+            <md-input-container>
+              <input mdInput type="email" placeholder="Email" [(ngModel)]="custEdit.Email" required/>
+            </md-input-container>
+          </div>
+
+          <button md-raised-button color="primary" *ngIf="!customer.editing" (click)="editInlineCustomer(i)">
+            <md-icon>border_color</md-icon> Edit
+          </button>
+          <button md-raised-button color="warn" *ngIf="!customer.editing" (click)="deleteCustomer(i)">
+            <md-icon>delete</md-icon> Delete
+          </button>
+
+          <button md-raised-button color="primary" *ngIf="customer.editing" (click)="saveCustomer(i)">
+            <md-icon>save</md-icon> Save
+          </button>
+          <button md-raised-button color="warn" *ngIf="customer.editing" (click)="cancelSaveCustomer(i)">
+            <md-icon>cancel</md-icon> Cancel
+          </button>
+        </md-list-item>
+    </md-nav-list>
+  </md-card-content>
+</md-card>

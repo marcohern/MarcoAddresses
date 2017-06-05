@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MdSnackBar} from '@angular/material';
 
 import { AddressesService } from '../addresses.service';
 import { Address } from '../models/address';
@@ -19,7 +20,7 @@ export class AddressListComponent implements OnInit {
   private states:Option[];
   private cities:Option[];
   private loading:boolean=false;
-  constructor(private as:AddressesService) { }
+  constructor(private as:AddressesService, private snackBar:MdSnackBar) { }
 
   ngOnInit() {
     this.as.list().subscribe(data => {
@@ -61,6 +62,7 @@ export class AddressListComponent implements OnInit {
 
   cancelEditAddress(i) {
     this.addresses[i].editing = false;
+    this.snackBar.open("Editing address canceled.");
   }
 
   findCountry(countryId):Option {
@@ -108,10 +110,12 @@ export class AddressListComponent implements OnInit {
     this.addresses[i].saving = true;
     this.as.update(this.addrEdit, this.addrEdit.Id, false).subscribe(address => {
       this.addresses[i].saving = false;
-      this.addresses[i].editing = false
+      this.addresses[i].editing = false;
+      this.snackBar.open("Address saved!");
     }, error => {
       this.addresses[i].saving = false;
-      this.addresses[i].editing = false
+      this.addresses[i].editing = false;
+      this.snackBar.open("Error while saving address.");
     });
   }
 
@@ -153,6 +157,7 @@ export class AddressListComponent implements OnInit {
     if (confirm("Delete this address: " + addr.Address1+ "," + addr.Address2 + ". " + addr.City + "?")) {
       this.as.delete(addr.Id).subscribe(data => {
         this.addresses.splice(i,1);
+        this.snackBar.open("Address deleted.");
       });
     }
   }

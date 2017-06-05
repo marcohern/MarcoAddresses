@@ -7,7 +7,7 @@
     </md-card-header>
     <md-card-content>
         <md-nav-list>
-            <md-list-item class="taller" *ngFor="let address of addresses;let i=index;">
+            <md-list-item *ngFor="let address of addresses;let i=index;">
                 <md-icon md-list-icon *ngIf="!address.editing">place</md-icon>
                 <md-icon md-list-icon *ngIf="address.editing">border_color</md-icon>
                 <h3 md-line *ngIf="!address.editing">

@@ -13,6 +13,7 @@ export interface Address {
     State?:string;
     Country?:string;
     Continent?:string;
+    Customer?:string;
 
     editing?:boolean;
     saving?:boolean;

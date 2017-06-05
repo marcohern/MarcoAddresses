@@ -306,14 +306,14 @@ module.exports = "<md-card>\n  <h2>About Marco Addresses</h2>\n  <div style=\"fl
 /***/ 179:
 /***/ (function(module, exports) {
 
-module.exports = "<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\" required>\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<!--pre>{{ addressForm.value | json}}</pre-->\n"
+module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/addresses']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\" required>\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<!--pre>{{ addressForm.value | json}}</pre-->\n"
 
 /***/ }),
 
 /***/ 180:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item class=\"taller\" *ngFor=\"let address of addresses;let i=index;\">\n                <md-icon md-list-icon *ngIf=\"!address.editing\">place</md-icon>\n                <md-icon md-list-icon *ngIf=\"address.editing\">border_color</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    {{address.Address1}} <button md-raised-button (click)=\"editInlineAddress(i)\"><md-icon>border_color</md-icon></button>\n                </h3>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\"/>\n                </md-input-container>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <md-input-container md-line *ngIf=\"address.editing\">\n                    <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\"/>\n                </md-input-container>\n                <md-progress-bar *ngIf=\"address.saving\" md-line color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\"><md-icon>save</md-icon>Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\"><md-icon>cancel</md-icon>Cancel</button>\n                <a md-raised-button *ngIf=\"!address.editing\" color=\"primary\" [routerLink]=\"['/address',address.Id]\"><md-icon>edit</md-icon> Edit</a>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\"><md-icon>delete</md-icon>Delete</button>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
+module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item class=\"taller\" *ngFor=\"let address of addresses;let i=index;\">\n                <md-icon md-list-icon *ngIf=\"!address.editing\">place</md-icon>\n                <md-icon md-list-icon *ngIf=\"address.editing\">border_color</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    <b>{{address.Customer}}</b>: {{address.Address1}}\n                </h3>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Type\" [(ngModel)]=\"addrEdit.Type\" required>\n                        <md-option value=\"A\">Account</md-option>\n                        <md-option value=\"M\">Mailing</md-option>\n                        <md-option value=\"L\">Legal</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\" required/>\n                    </md-input-container>\n                    <md-input-container>\n                        <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\" required/>\n                    </md-input-container>\n                    <md-select placeholder=\"Customer\" *ngIf=\"address.editing\" [(ngModel)]=\"addrEdit.CustomerId\" required>\n                        <md-option *ngFor=\"let customer of customers;let i=index;\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n                    </md-select>\n                </div>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Country\" [(ngModel)]=\"addrEdit.CountryId\" (change)=\"onChangeCountry()\" required>\n                        <md-option *ngFor=\"let country of countries;\" [value]=\"country.Id\">{{country.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"State\" [(ngModel)]=\"addrEdit.StateId\" (change)=\"onChangeState()\" required>\n                        <md-option *ngFor=\"let state of states;\" [value]=\"state.Id\">{{state.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"City\" [(ngModel)]=\"addrEdit.CityId\" required>\n                        <md-option *ngFor=\"let city of cities;\" [value]=\"city.Id\">{{city.Name}}</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Zip\" type=\"number\" [(ngModel)]=\"addrEdit.Zip\" required>\n                    </md-input-container>\n                </div>\n                <div class=\"maddr-fill\"></div>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\"><md-icon>save</md-icon>Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\"><md-icon>cancel</md-icon>Cancel</button>\n                \n                <!--a md-raised-button color=\"primary\" [routerLink]=\"['/address',address.Id]\"><md-icon>edit</md-icon> Edit</a-->\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"primary\" (click)=\"editInlineAddress(i)\"><md-icon>border_color</md-icon>Edit</button>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\"><md-icon>delete</md-icon>Delete</button>\n\n                <md-progress-bar md-line *ngIf=\"address.saving\" color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
 
 /***/ }),
 
@@ -823,6 +823,7 @@ var AddressListComponent = (function () {
     function AddressListComponent(as) {
         this.as = as;
         this.lastEdited = -1;
+        this.loading = false;
     }
     AddressListComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -833,30 +834,77 @@ var AddressListComponent = (function () {
                 address.saving = false;
             });
         });
+        this.loading = true;
+        this.as.customerOptions().subscribe(function (customers) { return _this.customers = customers; });
+        this.loadCountries();
+        this.loading = false;
     };
     AddressListComponent.prototype.editInlineAddress = function (i) {
         if (this.lastEdited >= 0) {
             this.cancelEditAddress(this.lastEdited);
         }
+        console.log("editInlineAddress", i, this.addresses[i]);
         this.addrEdit = {
             Id: this.addresses[i].Id,
             Type: this.addresses[i].Type,
             Address1: this.addresses[i].Address1,
             Address2: this.addresses[i].Address2,
+            CountryId: this.addresses[i].CountryId,
+            StateId: this.addresses[i].StateId,
             CityId: this.addresses[i].CityId,
             Zip: this.addresses[i].Zip,
             CustomerId: this.addresses[i].CustomerId
         };
+        this.loading = true;
+        this.loadStates(this.addrEdit.CountryId);
+        this.loadCities(this.addrEdit.StateId);
         this.addresses[i].editing = true;
         this.lastEdited = i;
+        this.loading = false;
     };
     AddressListComponent.prototype.cancelEditAddress = function (i) {
         this.addresses[i].editing = false;
     };
+    AddressListComponent.prototype.findCountry = function (countryId) {
+        for (var i = 0; i < this.countries.length; i++) {
+            if (this.countries[i].Id == countryId)
+                return this.countries[i];
+        }
+        return null;
+    };
+    AddressListComponent.prototype.findState = function (stateId) {
+        for (var i = 0; i < this.states.length; i++) {
+            if (this.states[i].Id == stateId)
+                return this.states[i];
+        }
+        return null;
+    };
+    AddressListComponent.prototype.findCity = function (cityId) {
+        for (var i = 0; i < this.cities.length; i++) {
+            if (this.cities[i].Id == cityId)
+                return this.cities[i];
+        }
+        return null;
+    };
+    AddressListComponent.prototype.findCustomer = function (customerId) {
+        for (var i = 0; i < this.customers.length; i++) {
+            if (this.customers[i].Id == customerId)
+                return this.customers[i];
+        }
+        return null;
+    };
     AddressListComponent.prototype.saveAddress = function (i) {
         var _this = this;
+        this.addresses[i].Type = this.addrEdit.Type;
         this.addresses[i].Address1 = this.addrEdit.Address1;
         this.addresses[i].Address2 = this.addrEdit.Address2;
+        this.addresses[i].CustomerId = this.addrEdit.CustomerId;
+        this.addresses[i].CityId = this.addrEdit.CityId;
+        this.addresses[i].Zip = this.addrEdit.Zip;
+        this.addresses[i].Customer = this.findCustomer(this.addrEdit.CustomerId).Name;
+        this.addresses[i].Country = this.findCountry(this.addrEdit.CountryId).Name;
+        this.addresses[i].State = this.findState(this.addrEdit.StateId).Name;
+        this.addresses[i].City = this.findCity(this.addrEdit.CityId).Name;
         this.addresses[i].saving = true;
         this.as.update(this.addrEdit, this.addrEdit.Id, false).subscribe(function (address) {
             _this.addresses[i].saving = false;
@@ -864,6 +912,38 @@ var AddressListComponent = (function () {
         }, function (error) {
             _this.addresses[i].saving = false;
             _this.addresses[i].editing = false;
+        });
+    };
+    AddressListComponent.prototype.loadCountries = function () {
+        var _this = this;
+        this.as.countryOptions().subscribe(function (countries) { return _this.countries = countries; });
+    };
+    AddressListComponent.prototype.onChangeCountry = function () {
+        if (!this.loading) {
+            this.addrEdit.StateId = 0;
+            this.addrEdit.CityId = 0;
+        }
+        ;
+        this.loadStates(this.addrEdit.CountryId);
+    };
+    AddressListComponent.prototype.loadStates = function (countryId) {
+        var _this = this;
+        this.as.stateOptions(countryId).subscribe(function (states) {
+            console.log("loadStates response", countryId, states);
+            _this.states = states;
+        });
+    };
+    AddressListComponent.prototype.onChangeState = function () {
+        if (!this.loading) {
+            this.addrEdit.CityId = 0;
+        }
+        this.loadCities(this.addrEdit.StateId);
+    };
+    AddressListComponent.prototype.loadCities = function (stateId) {
+        var _this = this;
+        this.as.cityOptions(stateId).subscribe(function (cities) {
+            console.log("loadCities response", stateId, cities);
+            _this.cities = cities;
         });
     };
     AddressListComponent.prototype.deleteAddress = function (i) {

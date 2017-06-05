@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[QueryAddress]
 AS BEGIN
 	SELECT a.Id, a.Type, a.Address1, a.Address2, a.CityId, a.Zip, a.CustomerId,
-		c.Name AS City, s.Name AS State, co.Name AS Country, co.Continent AS Continent,
+		c.Name AS City, s.Id AS StateId, s.Name AS State, co.Id AS CountryId, co.Name AS Country, co.Continent AS Continent,
 		cu.Name AS Customer
 	FROM Addresses a
 	INNER JOIN Cities c ON a.CityId = c.Id

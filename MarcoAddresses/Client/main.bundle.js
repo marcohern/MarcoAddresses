@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 108;
+webpackEmptyContext.id = 109;
 
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(79);
 
 
 
@@ -35,12 +35,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -62,8 +62,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(184),
-        styles: [__webpack_require__(177)]
+        template: __webpack_require__(186),
+        styles: [__webpack_require__(178)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -73,28 +73,29 @@ var _a;
 
 /***/ }),
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__request_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__addresses_service__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__customer_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__request_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__addresses_service__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__customer_service__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_material__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_routes__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__welcome_welcome_component__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__address_list_address_list_component__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__address_detail_address_detail_component__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__about_about_component__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__customer_list_customer_list_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_routes__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__welcome_welcome_component__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__address_list_address_list_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__address_detail_address_detail_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__about_about_component__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__customer_list_customer_list_component__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__customer_detail_customer_detail_component__ = __webpack_require__(76);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -102,6 +103,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -132,7 +134,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_13__address_list_address_list_component__["a" /* AddressListComponent */],
             __WEBPACK_IMPORTED_MODULE_14__address_detail_address_detail_component__["a" /* AddressDetailComponent */],
             __WEBPACK_IMPORTED_MODULE_15__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__customer_list_customer_list_component__["a" /* CustomerListComponent */]
+            __WEBPACK_IMPORTED_MODULE_16__customer_list_customer_list_component__["a" /* CustomerListComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__customer_detail_customer_detail_component__["a" /* CustomerDetailComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
@@ -164,17 +167,18 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 119:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__customer_list_customer_list_component__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about_component__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__customer_list_customer_list_component__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__customer_detail_customer_detail_component__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about_component__ = __webpack_require__(73);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutes; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -189,13 +193,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: 'welcome', component: __WEBPACK_IMPORTED_MODULE_2__welcome_welcome_component__["a" /* WelcomeComponent */] },
-    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_7__about_about_component__["a" /* AboutComponent */] },
     { path: 'addresses', component: __WEBPACK_IMPORTED_MODULE_3__address_list_address_list_component__["a" /* AddressListComponent */] },
     { path: 'address/add', component: __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__["a" /* AddressDetailComponent */] },
     { path: 'address/:id', component: __WEBPACK_IMPORTED_MODULE_4__address_detail_address_detail_component__["a" /* AddressDetailComponent */] },
     { path: 'customers', component: __WEBPACK_IMPORTED_MODULE_5__customer_list_customer_list_component__["a" /* CustomerListComponent */] },
+    { path: 'customer/add', component: __WEBPACK_IMPORTED_MODULE_6__customer_detail_customer_detail_component__["a" /* CustomerDetailComponent */] },
+    { path: 'customer/:id', component: __WEBPACK_IMPORTED_MODULE_6__customer_detail_customer_detail_component__["a" /* CustomerDetailComponent */] },
     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
 ];
@@ -215,28 +222,10 @@ AppRoutes = __decorate([
 
 /***/ }),
 
-/***/ 174:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(10)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -254,43 +243,7 @@ module.exports = module.exports.toString();
 /***/ 176:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".taller {\r\n    padding-top: 10px;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 177:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".app-icon-button {\r\n  box-shadow: none;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  -webkit-filter: none;\r\n          filter: none;\r\n  font-weight: normal;\r\n  height: auto;\r\n  line-height: inherit;\r\n  margin: 0;\r\n  min-width: 0;\r\n  padding: 0;\r\n  text-align: left;\r\n  text-decoration: none;\r\n}\r\n\r\n.app-toolbar-menu {\r\n  padding: 0 14px 0 14px;\r\n  color: white;\r\n}\r\n.app-content {\r\n  padding: 20px;\r\n}\r\n\r\n.app-content md-card {\r\n  margin: 20px;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 178:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -305,10 +258,64 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ 177:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".taller {\r\n    padding-top: 10px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 178:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".app-icon-button {\r\n  box-shadow: none;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  background: none;\r\n  border: none;\r\n  cursor: pointer;\r\n  -webkit-filter: none;\r\n          filter: none;\r\n  font-weight: normal;\r\n  height: auto;\r\n  line-height: inherit;\r\n  margin: 0;\r\n  min-width: 0;\r\n  padding: 0;\r\n  text-align: left;\r\n  text-decoration: none;\r\n}\r\n\r\n.app-toolbar-menu {\r\n  padding: 0 14px 0 14px;\r\n  color: white;\r\n}\r\n.app-content {\r\n  padding: 20px;\r\n}\r\n\r\n.app-content md-card {\r\n  margin: 20px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(10)(false);
+exports = module.exports = __webpack_require__(8)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 180:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -324,56 +331,81 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ 181:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<md-card>\n  <h2>About Marco Addresses</h2>\n  <div style=\"float:left;width:128px;margin:4px;\">\n    <md-icon style=\"font-size:128px\">computer</md-icon>\n  </div>\n  <p>Made by Marco Hernandez, GAP, 2017.</p>\n  <p>\n    <a md-raised-button color=\"accent\" href=\"mailto:mhernandez@growthaccelerationpartners.com\">mhernandez@growthaccelerationpartners.com</a>\n  </p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n</md-card>"
+exports = module.exports = __webpack_require__(8)(false);
+// imports
 
-/***/ }),
 
-/***/ 182:
-/***/ (function(module, exports) {
+// module
+exports.push([module.i, "", ""]);
 
-module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/addresses']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\" required>\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<!--pre>{{ addressForm.value | json}}</pre-->\n"
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 183:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item *ngFor=\"let address of addresses;let i=index;\">\n                <md-icon md-list-icon *ngIf=\"!address.editing\">place</md-icon>\n                <md-icon md-list-icon *ngIf=\"address.editing\">border_color</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    <b>{{address.Customer}}</b>: {{address.Address1}}\n                </h3>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Type\" [(ngModel)]=\"addrEdit.Type\" required>\n                        <md-option value=\"A\">Account</md-option>\n                        <md-option value=\"M\">Mailing</md-option>\n                        <md-option value=\"L\">Legal</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\" required/>\n                    </md-input-container>\n                    <md-input-container>\n                        <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\" required/>\n                    </md-input-container>\n                    <md-select placeholder=\"Customer\" *ngIf=\"address.editing\" [(ngModel)]=\"addrEdit.CustomerId\" required>\n                        <md-option *ngFor=\"let customer of customers;let i=index;\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n                    </md-select>\n                </div>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Country\" [(ngModel)]=\"addrEdit.CountryId\" (change)=\"onChangeCountry()\" required>\n                        <md-option *ngFor=\"let country of countries;\" [value]=\"country.Id\">{{country.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"State\" [(ngModel)]=\"addrEdit.StateId\" (change)=\"onChangeState()\" required>\n                        <md-option *ngFor=\"let state of states;\" [value]=\"state.Id\">{{state.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"City\" [(ngModel)]=\"addrEdit.CityId\" required>\n                        <md-option *ngFor=\"let city of cities;\" [value]=\"city.Id\">{{city.Name}}</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Zip\" type=\"number\" [(ngModel)]=\"addrEdit.Zip\" required>\n                    </md-input-container>\n                </div>\n                <div class=\"maddr-fill\"></div>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\"><md-icon>save</md-icon>Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\"><md-icon>cancel</md-icon>Cancel</button>\n                \n                <!--a md-raised-button color=\"primary\" [routerLink]=\"['/address',address.Id]\"><md-icon>edit</md-icon> Edit</a-->\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"primary\" (click)=\"editInlineAddress(i)\"><md-icon>border_color</md-icon>Edit</button>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\"><md-icon>delete</md-icon>Delete</button>\n\n                <md-progress-bar md-line *ngIf=\"address.saving\" color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
+module.exports = "<md-card>\n  <h2>About Marco Addresses</h2>\n  <div style=\"float:left;width:128px;margin:4px;\">\n    <md-icon style=\"font-size:128px\">computer</md-icon>\n  </div>\n  <p>Made by Marco Hernandez, GAP, 2017.</p>\n  <p>\n    <a md-raised-button color=\"accent\" href=\"mailto:mhernandez@growthaccelerationpartners.com\">mhernandez@growthaccelerationpartners.com</a>\n  </p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n</md-card>"
 
 /***/ }),
 
 /***/ 184:
 /***/ (function(module, exports) {
 
-module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\" [opened]=\"true\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/customers']\">\r\n                    <md-icon>account_circle</md-icon> Customers\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/about']\">\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n</md-sidenav-container>"
+module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/addresses']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"addressForm\" (ngSubmit)=\"saveAddress(addressForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-select placeholder=\"Address Type\" formControlName=\"Type\">\n        <md-option value=\"A\">Account</md-option>\n        <md-option value=\"M\">Mailing</md-option>\n        <md-option value=\"L\">Legal</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address1\" formControlName=\"Address1\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Address2\" formControlName=\"Address2\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Customer\" formControlName=\"CustomerId\" required>\n        <md-option *ngFor=\"let customer of customers\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-select placeholder=\"Country\" formControlName=\"CountryId\" (change)=\"getStates(addressForm.value.CountryId)\">\n        <md-option *ngFor=\"let country of countries\" [value]=\"country.Id\">{{country.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"State\" formControlName=\"StateId\" (change)=\"getCities(addressForm.value.StateId)\">\n        <md-option *ngFor=\"let state of states\" [value]=\"state.Id\">{{state.Name}}</md-option>\n      </md-select>\n      <md-select placeholder=\"City\" formControlName=\"CityId\">\n        <md-option *ngFor=\"let city of cities\" [value]=\"city.Id\">{{city.Name}}</md-option>\n      </md-select>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input type=\"number\" mdInput placeholder=\"Zip\" formControlName=\"Zip\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\" [disabled]=\"!addressForm.valid\">Save</button>\n    </md-list-item>\n  </md-list>\n</form>\n<!--pre>{{ addressForm.value | json}}</pre-->\n"
 
 /***/ }),
 
 /***/ 185:
 /***/ (function(module, exports) {
 
-module.exports = "<md-card>\n  <md-card-header>\n    <md-card-title><h2>Customer List</h2></md-card-title>\n  </md-card-header>\n  <md-card-content>\n    <a md-raised-button color=\"primary\" (routerLink)=\"['/customer/add']\">Add</a>\n    <md-nav-list>\n        <md-list-item *ngFor=\"let customer of customers;let i = index;\">\n          <md-icon md-list-icon *ngIf=\"!customer.editing\">face</md-icon>\n          <md-icon md-list-icon *ngIf=\"customer.editing\">border_color</md-icon>\n\n          <h3 md-line *ngIf=\"!customer.editing\">\n              {{customer.Name}}\n          </h3>\n          <p md-line *ngIf=\"!customer.editing\">\n              {{customer.Email}}\n          </p>\n\n          <div md-line *ngIf=\"customer.editing\">\n            <md-input-container>\n              <input mdInput placeholder=\"Name\" [(ngModel)]=\"custEdit.Name\" required/>\n            </md-input-container>\n            <md-input-container>\n              <input mdInput type=\"email\" placeholder=\"Email\" [(ngModel)]=\"custEdit.Email\" required/>\n            </md-input-container>\n          </div>\n\n          <button md-raised-button color=\"primary\" *ngIf=\"!customer.editing\" (click)=\"editInlineCustomer(i)\">\n            <md-icon>border_color</md-icon> Edit\n          </button>\n          <button md-raised-button color=\"warn\" *ngIf=\"!customer.editing\" (click)=\"deleteCustomer(i)\">\n            <md-icon>delete</md-icon> Delete\n          </button>\n\n          <button md-raised-button color=\"primary\" *ngIf=\"customer.editing\" (click)=\"saveCustomer(i)\">\n            <md-icon>save</md-icon> Save\n          </button>\n          <button md-raised-button color=\"warn\" *ngIf=\"customer.editing\" (click)=\"cancelSaveCustomer(i)\">\n            <md-icon>cancel</md-icon> Cancel\n          </button>\n        </md-list-item>\n    </md-nav-list>\n  </md-card-content>\n</md-card>"
+module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Address List</h2></md-card-title>\n    </md-card-header>\n    <md-card-header>\n        <a md-raised-button color=\"primary\" [routerLink]=\"['/address/add']\">Add</a>\n    </md-card-header>\n    <md-card-content>\n        <md-nav-list>\n            <md-list-item *ngFor=\"let address of addresses;let i=index;\">\n                <md-icon md-list-icon *ngIf=\"!address.editing\">place</md-icon>\n                <md-icon md-list-icon *ngIf=\"address.editing\">border_color</md-icon>\n                <h3 md-line *ngIf=\"!address.editing\">\n                    <b>{{address.Customer}}</b>: {{address.Address1}}\n                </h3>\n                <p md-line *ngIf=\"!address.editing\">\n                    {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}\n                </p>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Type\" [(ngModel)]=\"addrEdit.Type\" required>\n                        <md-option value=\"A\">Account</md-option>\n                        <md-option value=\"M\">Mailing</md-option>\n                        <md-option value=\"L\">Legal</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Address1\" [(ngModel)]=\"addrEdit.Address1\" required/>\n                    </md-input-container>\n                    <md-input-container>\n                        <input mdInput  placeholder=\"Address2\" [(ngModel)]=\"addrEdit.Address2\" required/>\n                    </md-input-container>\n                    <md-select placeholder=\"Customer\" *ngIf=\"address.editing\" [(ngModel)]=\"addrEdit.CustomerId\" required>\n                        <md-option *ngFor=\"let customer of customers;let i=index;\" [value]=\"customer.Id\">{{customer.Name}}</md-option>\n                    </md-select>\n                </div>\n                <div md-line *ngIf=\"address.editing\">\n                    <md-select placeholder=\"Country\" [(ngModel)]=\"addrEdit.CountryId\" (change)=\"onChangeCountry()\" required>\n                        <md-option *ngFor=\"let country of countries;\" [value]=\"country.Id\">{{country.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"State\" [(ngModel)]=\"addrEdit.StateId\" (change)=\"onChangeState()\" required>\n                        <md-option *ngFor=\"let state of states;\" [value]=\"state.Id\">{{state.Name}}</md-option>\n                    </md-select>\n                    <md-select placeholder=\"City\" [(ngModel)]=\"addrEdit.CityId\" required>\n                        <md-option *ngFor=\"let city of cities;\" [value]=\"city.Id\">{{city.Name}}</md-option>\n                    </md-select>\n                    <md-input-container>\n                        <input mdInput placeholder=\"Zip\" type=\"number\" [(ngModel)]=\"addrEdit.Zip\" required>\n                    </md-input-container>\n                </div>\n                <div class=\"maddr-fill\"></div>\n               \n                <button md-raised-button *ngIf=\"address.editing\" color=\"primary\" (click)=\"saveAddress(i)\"><md-icon>save</md-icon>Save</button>\n                <button md-raised-button *ngIf=\"address.editing\" color=\"warn\" (click)=\"cancelEditAddress(i)\"><md-icon>cancel</md-icon>Cancel</button>\n                \n                <!--a md-raised-button color=\"primary\" [routerLink]=\"['/address',address.Id]\"><md-icon>edit</md-icon> Edit</a-->\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"primary\" (click)=\"editInlineAddress(i)\"><md-icon>border_color</md-icon>Edit</button>\n                <button md-raised-button *ngIf=\"!address.editing\" color=\"warn\" (click)=\"deleteAddress(i)\"><md-icon>delete</md-icon>Delete</button>\n\n                <md-progress-bar md-line *ngIf=\"address.saving\" color=\"primary\" mode=\"indeterminate\"></md-progress-bar>\n            </md-list-item>\n        </md-nav-list>\n    </md-card-content>\n</md-card>"
 
 /***/ }),
 
 /***/ 186:
 /***/ (function(module, exports) {
 
+module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side\" [opened]=\"true\">\r\n        <md-list>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/welcome']\">\r\n                    <md-icon>assistant</md-icon>Welcome\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/addresses']\">\r\n                    <md-icon>list</md-icon> Addresses\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/customers']\">\r\n                    <md-icon>account_circle</md-icon> Customers\r\n                </button>\r\n            </md-list-item>\r\n            <md-list-item>\r\n                <button md-button [routerLink]=\"['/about']\">\r\n                    <md-icon>question_answer</md-icon> About\r\n                </button>\r\n            </md-list-item>\r\n        </md-list>\r\n    </md-sidenav>\r\n    <md-toolbar color=\"primary\">\r\n        <button md-button (click)=\"sidenav.toggle()\">\r\n            <md-icon>menu</md-icon>\r\n        </button>\r\n        Marco Addresses\r\n    </md-toolbar>\r\n    <br/>\r\n    <md-progress-bar *ngIf=\"rs.isCalling()\"\r\n          color=\"primary\"\r\n          mode=\"indeterminate\">\r\n      </md-progress-bar>\r\n    <router-outlet></router-outlet>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n    <br/>\r\n</md-sidenav-container>"
+
+/***/ }),
+
+/***/ 187:
+/***/ (function(module, exports) {
+
+module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/customers']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"customerForm\" (ngSubmit)=\"saveCustomer(customerForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Name\" formControlName=\"Name\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput type=\"email\" placeholder=\"Email\" formControlName=\"Email\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\" [disabled]=\"!customerForm.valid\">Save</button>\n    </md-list-item>\n  </md-list>\n  <div *ngIf=\"editing\">\n    <h3>Addresses</h3>\n    <a md-raised-button color=\"primary\"><md-icon>plus</md-icon> Add Address</a>\n    <md-list>\n      \n    </md-list>\n  </div>\n</form>\n<!--pre>{{ customerForm.value | json}}</pre-->"
+
+/***/ }),
+
+/***/ 188:
+/***/ (function(module, exports) {
+
+module.exports = "<md-card>\n  <md-card-header>\n    <md-card-title><h2>Customer List</h2></md-card-title>\n  </md-card-header>\n  <md-card-content>\n    <a md-raised-button color=\"primary\" [routerLink]=\"['/customer/add']\">Add</a>\n    <md-nav-list>\n        <md-list-item *ngFor=\"let customer of customers;let i = index;\">\n          <md-icon md-list-icon *ngIf=\"!customer.editing\">face</md-icon>\n          <md-icon md-list-icon *ngIf=\"customer.editing\">border_color</md-icon>\n\n          <h3 md-line *ngIf=\"!customer.editing\">\n              {{customer.Name}}\n          </h3>\n          <p md-line *ngIf=\"!customer.editing\">\n              {{customer.Email}}\n          </p>\n\n          <div md-line *ngIf=\"customer.editing\">\n            <md-input-container>\n              <input mdInput placeholder=\"Name\" [(ngModel)]=\"custEdit.Name\" required/>\n            </md-input-container>\n            <md-input-container>\n              <input mdInput type=\"email\" placeholder=\"Email\" [(ngModel)]=\"custEdit.Email\" required/>\n            </md-input-container>\n          </div>\n\n          <a md-raised-button color=\"primary\" *ngIf=\"!customer.editing\" [routerLink]=\"['/customer',customer.Id]\">\n            <md-icon>face</md-icon> Detail\n          </a>\n\n          <button md-raised-button color=\"primary\" *ngIf=\"!customer.editing\" (click)=\"editInlineCustomer(i)\">\n            <md-icon>border_color</md-icon> Edit\n          </button>\n          <button md-raised-button color=\"warn\" *ngIf=\"!customer.editing\" (click)=\"deleteCustomer(i)\">\n            <md-icon>delete</md-icon> Delete\n          </button>\n\n          <button md-raised-button color=\"primary\" *ngIf=\"customer.editing\" (click)=\"saveCustomer(i)\">\n            <md-icon>save</md-icon> Save\n          </button>\n          <button md-raised-button color=\"warn\" *ngIf=\"customer.editing\" (click)=\"cancelSaveCustomer(i)\">\n            <md-icon>cancel</md-icon> Cancel\n          </button>\n        </md-list-item>\n    </md-nav-list>\n  </md-card-content>\n</md-card>"
+
+/***/ }),
+
+/***/ 189:
+/***/ (function(module, exports) {
+
 module.exports = "<md-card>\n    <md-card-header>\n        <md-card-title><h2>Welcome</h2></md-card-title>\n    </md-card-header>\n    <md-card-content>\n        <p>\n        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.\n        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally\n        bred for hunting.\n        </p>\n        <p></p>\n        <p></p>\n        <p></p>\n        <p></p>\n        <p></p>\n    </md-card-content>\n</md-card>"
 
 /***/ }),
 
-/***/ 237:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(109);
+module.exports = __webpack_require__(110);
 
 
 /***/ }),
 
-/***/ 28:
+/***/ 29:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -381,13 +413,13 @@ module.exports = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(79);
 /* unused harmony export Method */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RequestService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -573,17 +605,17 @@ var _a;
 
 /***/ }),
 
-/***/ 44:
+/***/ 45:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddressesService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -654,7 +686,70 @@ var _a;
 
 /***/ }),
 
-/***/ 72:
+/***/ 46:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomerService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var CustomerService = (function () {
+    function CustomerService(rs) {
+        this.rs = rs;
+    }
+    CustomerService.prototype.list = function () {
+        return this.rs.query('/Customers')
+            .map(function (r) { return r.json(); });
+    };
+    CustomerService.prototype.get = function (id) {
+        return this.rs.get('/Customers', id)
+            .map(function (r) { return r.json(); });
+    };
+    CustomerService.prototype.save = function (customer) {
+        return this.rs.save('/Customers', customer)
+            .map(function (r) { return r.json(); });
+    };
+    CustomerService.prototype.update = function (id, customer) {
+        return this.rs.update('/Customers', customer, id)
+            .map(function (r) { return r.json(); });
+    };
+    CustomerService.prototype.delete = function (id) {
+        return this.rs.delete('/Customers', id)
+            .map(function (r) { return r.json(); });
+    };
+    return CustomerService;
+}());
+CustomerService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */]) === "function" && _a || Object])
+], CustomerService);
+
+var _a;
+//# sourceMappingURL=customer.service.js.map
+
+/***/ }),
+
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -680,8 +775,8 @@ var AboutComponent = (function () {
 AboutComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-about',
-        template: __webpack_require__(181),
-        styles: [__webpack_require__(174)]
+        template: __webpack_require__(183),
+        styles: [__webpack_require__(175)]
     }),
     __metadata("design:paramtypes", [])
 ], AboutComponent);
@@ -690,14 +785,14 @@ AboutComponent = __decorate([
 
 /***/ }),
 
-/***/ 73:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__addresses_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__addresses_service__ = __webpack_require__(45);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddressDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -824,10 +919,10 @@ var AddressDetailComponent = (function () {
 AddressDetailComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-address-detail',
-        template: __webpack_require__(182),
-        styles: [__webpack_require__(175)]
+        template: __webpack_require__(184),
+        styles: [__webpack_require__(176)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__addresses_service__["a" /* AddressesService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _d || Object])
 ], AddressDetailComponent);
 
 var _a, _b, _c, _d;
@@ -835,13 +930,13 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__addresses_service__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__addresses_service__ = __webpack_require__(45);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddressListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1001,8 +1096,8 @@ var AddressListComponent = (function () {
 AddressListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-address-list',
-        template: __webpack_require__(183),
-        styles: [__webpack_require__(176)]
+        template: __webpack_require__(185),
+        styles: [__webpack_require__(177)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__addresses_service__["a" /* AddressesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__addresses_service__["a" /* AddressesService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MdSnackBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MdSnackBar */]) === "function" && _b || Object])
 ], AddressListComponent);
@@ -1012,13 +1107,89 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__customer_service__ = __webpack_require__(46);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomerDetailComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CustomerDetailComponent = (function () {
+    function CustomerDetailComponent(fb, cs, router, route) {
+        this.fb = fb;
+        this.cs = cs;
+        this.router = router;
+        this.route = route;
+        this.editing = false;
+    }
+    CustomerDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.customerForm = this.fb.group({
+            Name: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required],
+            Email: ['', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["h" /* Validators */].email]]
+        });
+        var id = this.route.snapshot.params['id'];
+        if (id) {
+            this.editing = true;
+            this.cs.get(id).subscribe(function (data) {
+                var c = {
+                    Name: data.Name,
+                    Email: data.Email
+                };
+                _this.customerForm.setValue(c);
+            });
+        }
+    };
+    CustomerDetailComponent.prototype.saveCustomer = function (value) {
+        var _this = this;
+        var id = this.route.snapshot.params['id'];
+        var customer = {
+            Id: id,
+            Name: value.Name,
+            Email: value.Email
+        };
+        this.cs.save(customer).subscribe(function (data) {
+            _this.router.navigate(['/customers']);
+        });
+    };
+    return CustomerDetailComponent;
+}());
+CustomerDetailComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+        selector: 'app-customer-detail',
+        template: __webpack_require__(187),
+        styles: [__webpack_require__(179)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["i" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["i" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__customer_service__["a" /* CustomerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__customer_service__["a" /* CustomerService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _d || Object])
+], CustomerDetailComponent);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=customer-detail.component.js.map
+
+/***/ }),
+
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__customer_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__customer_service__ = __webpack_require__(46);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomerListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1087,8 +1258,8 @@ var CustomerListComponent = (function () {
 CustomerListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-customer-list',
-        template: __webpack_require__(185),
-        styles: [__webpack_require__(178)]
+        template: __webpack_require__(188),
+        styles: [__webpack_require__(180)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__customer_service__["a" /* CustomerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__customer_service__["a" /* CustomerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MdSnackBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MdSnackBar */]) === "function" && _b || Object])
 ], CustomerListComponent);
@@ -1098,70 +1269,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 76:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__request_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_do__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomerService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var CustomerService = (function () {
-    function CustomerService(rs) {
-        this.rs = rs;
-    }
-    CustomerService.prototype.list = function () {
-        return this.rs.query('/Customers')
-            .map(function (r) { return r.json(); });
-    };
-    CustomerService.prototype.get = function (id) {
-        return this.rs.get('/Customers', id)
-            .map(function (r) { return r.json(); });
-    };
-    CustomerService.prototype.save = function (customer) {
-        return this.rs.save('/Customers', customer)
-            .map(function (r) { return r.json(); });
-    };
-    CustomerService.prototype.update = function (id, customer) {
-        return this.rs.update('/Customers', customer, id)
-            .map(function (r) { return r.json(); });
-    };
-    CustomerService.prototype.delete = function (id) {
-        return this.rs.delete('/Customers', id)
-            .map(function (r) { return r.json(); });
-    };
-    return CustomerService;
-}());
-CustomerService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__request_service__["a" /* RequestService */]) === "function" && _a || Object])
-], CustomerService);
-
-var _a;
-//# sourceMappingURL=customer.service.js.map
-
-/***/ }),
-
-/***/ 77:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1187,8 +1295,8 @@ var WelcomeComponent = (function () {
 WelcomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
         selector: 'app-welcome',
-        template: __webpack_require__(186),
-        styles: [__webpack_require__(179)]
+        template: __webpack_require__(189),
+        styles: [__webpack_require__(181)]
     }),
     __metadata("design:paramtypes", [])
 ], WelcomeComponent);
@@ -1197,7 +1305,7 @@ WelcomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1222,5 +1330,5 @@ var environment = {
 
 /***/ })
 
-},[237]);
+},[240]);
 //# sourceMappingURL=main.bundle.js.map

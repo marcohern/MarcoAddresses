@@ -40,7 +40,7 @@
       </md-input-container>
     </md-list-item>
     <md-list-item>
-      <button md-raised-button color="primary" type="submit">Save</button>
+      <button md-raised-button color="primary" type="submit" [disabled]="!addressForm.valid">Save</button>
     </md-list-item>
   </md-list>
 </form>

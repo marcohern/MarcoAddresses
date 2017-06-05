@@ -1,4 +1,26 @@
 <a md-raised-button color="accent" [routerLink]="['/customers']"><md-icon>arrow_back</md-icon> Back</a>
-<p>
-  customer-detail works!
-</p>
+<form [formGroup]="customerForm" (ngSubmit)="saveCustomer(customerForm.value)">
+  <md-list>
+    <md-list-item>
+      <md-input-container>
+        <input mdInput placeholder="Name" formControlName="Name" />
+      </md-input-container>
+    </md-list-item>
+    <md-list-item>
+      <md-input-container>
+        <input mdInput type="email" placeholder="Email" formControlName="Email" />
+      </md-input-container>
+    </md-list-item>
+    <md-list-item>
+      <button md-raised-button color="primary" type="submit" [disabled]="!customerForm.valid">Save</button>
+    </md-list-item>
+  </md-list>
+  <div *ngIf="editing">
+    <h3>Addresses</h3>
+    <a md-raised-button color="primary"><md-icon>plus</md-icon> Add Address</a>
+    <md-list>
+      
+    </md-list>
+  </div>
+</form>
+<!--pre>{{ customerForm.value | json}}</pre-->

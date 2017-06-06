@@ -379,7 +379,7 @@ module.exports = "<md-sidenav-container>\r\n    <md-sidenav #sidenav mode=\"side
 /***/ 187:
 /***/ (function(module, exports) {
 
-module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/customers']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"customerForm\" (ngSubmit)=\"saveCustomer(customerForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Name\" formControlName=\"Name\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput type=\"email\" placeholder=\"Email\" formControlName=\"Email\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\" [disabled]=\"!customerForm.valid\">Save</button>\n    </md-list-item>\n  </md-list>\n  <div *ngIf=\"editing\">\n    <h3>Addresses</h3>\n    <a md-raised-button color=\"primary\"><md-icon>plus</md-icon> Add Address</a>\n    <md-list>\n      \n    </md-list>\n  </div>\n</form>\n<!--pre>{{ customerForm.value | json}}</pre-->"
+module.exports = "<a md-raised-button color=\"accent\" [routerLink]=\"['/customers']\"><md-icon>arrow_back</md-icon> Back</a>\n<form [formGroup]=\"customerForm\" (ngSubmit)=\"saveCustomer(customerForm.value)\">\n  <md-list>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput placeholder=\"Name\" formControlName=\"Name\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <md-input-container>\n        <input mdInput type=\"email\" placeholder=\"Email\" formControlName=\"Email\" />\n      </md-input-container>\n    </md-list-item>\n    <md-list-item>\n      <button md-raised-button color=\"primary\" type=\"submit\" [disabled]=\"!customerForm.valid\">Save</button>\n    </md-list-item>\n  </md-list>\n  <div *ngIf=\"editing\">\n    <h3>Addresses</h3>\n    <a md-raised-button color=\"primary\"><md-icon>plus</md-icon> Add Address</a>\n    <md-list>\n      <md-list-item *ngFor=\"let address of addresses\">\n        <h3 md-line *ngIf=\"!address.editing\">\n            {{address.Address1}}. {{address.Address2}}.\n        </h3>\n        <p md-line *ngIf=\"!address.editing\">\n            {{address.City}}, {{address.State}}, {{address.Country}}\n        </p>\n      </md-list-item>\n    </md-list>\n  </div>\n</form>\n<!--pre>{{ customerForm.value | json}}</pre-->"
 
 /***/ }),
 
@@ -1151,6 +1151,7 @@ var CustomerDetailComponent = (function () {
                     Name: data.Name,
                     Email: data.Email
                 };
+                _this.addresses = data.Addresses;
                 _this.customerForm.setValue(c);
             });
         }

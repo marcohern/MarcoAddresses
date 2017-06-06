@@ -28,5 +28,10 @@ namespace MarcoAddresses.Models
         /// Gets or sets Email Address
         /// </summary>
         public string Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets addreses belonging to the customer
+        /// </summary>
+        public IEnumerable<AddressSummary> Addresses { get; set; }
     }
 }

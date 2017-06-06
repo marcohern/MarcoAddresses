@@ -19,7 +19,14 @@
     <h3>Addresses</h3>
     <a md-raised-button color="primary"><md-icon>plus</md-icon> Add Address</a>
     <md-list>
-      
+      <md-list-item *ngFor="let address of addresses">
+        <h3 md-line *ngIf="!address.editing">
+            {{address.Address1}}. {{address.Address2}}.
+        </h3>
+        <p md-line *ngIf="!address.editing">
+            {{address.City}}, {{address.State}}, {{address.Country}}
+        </p>
+      </md-list-item>
     </md-list>
   </div>
 </form>

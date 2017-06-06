@@ -40,6 +40,9 @@ namespace MarcoAddresses.Controllers
         {
             Database db = DataAccess.GetDatabase();
             Customer customer = db.ExecuteSprocAccessor<Customer>("GetCustomer", new object[] { id }).FirstOrDefault();
+
+            IEnumerable<AddressSummary> addresses = db.ExecuteSprocAccessor<AddressSummary>("QueryAddress", new object[] { id });
+            customer.Addresses = addresses;
             if (customer == null)
             {
                 throw new NotFoundException("Customer not found");

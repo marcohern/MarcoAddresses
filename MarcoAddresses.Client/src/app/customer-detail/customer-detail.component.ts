@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Customer } from '../models/customer';
+import { Address } from '../models/address';
 import { CustomerService } from '../customer.service';
 
 @Component({
@@ -12,6 +13,7 @@ import { CustomerService } from '../customer.service';
 export class CustomerDetailComponent implements OnInit {
 
   private customerForm:FormGroup;
+  private addresses:Address[];
   private editing:boolean = false;
   constructor(
     private fb:FormBuilder,
@@ -33,6 +35,8 @@ export class CustomerDetailComponent implements OnInit {
           Name: data.Name,
           Email: data.Email
         }
+        this.addresses = data.Addresses;
+        
         this.customerForm.setValue(c);
       });
     } 

@@ -34,6 +34,7 @@ import { AddressDetailComponent } from './address-detail/address-detail.componen
 import { AboutComponent } from './about/about.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
+import { AddressInlineComponent } from './address-inline/address-inline.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CustomerDetailComponent } from './customer-detail/customer-detail.compo
     AddressDetailComponent,
     AboutComponent,
     CustomerListComponent,
-    CustomerDetailComponent
+    CustomerDetailComponent,
+    AddressInlineComponent
   ],
   imports: [
     BrowserAnimationsModule,

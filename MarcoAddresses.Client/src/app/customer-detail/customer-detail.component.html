@@ -15,19 +15,61 @@
       <button md-raised-button color="primary" type="submit" [disabled]="!customerForm.valid">Save</button>
     </md-list-item>
   </md-list>
-  <div *ngIf="editing">
-    <h3>Addresses</h3>
-    <a md-raised-button color="primary"><md-icon>plus</md-icon> Add Address</a>
-    <md-list>
-      <md-list-item *ngFor="let address of addresses">
+</form>
+<div *ngIf="editing">
+  <h3>Addresses</h3>
+  <!--a md-raised-button color="primary"><md-icon>plus</md-icon> Add Address</a-->
+  <md-list>
+    <md-list-item *ngFor="let address of addresses;let i=index;">
+        <md-icon md-list-icon *ngIf="!address.editing">place</md-icon>
+        <md-icon md-list-icon *ngIf="address.editing">border_color</md-icon>
         <h3 md-line *ngIf="!address.editing">
-            {{address.Address1}}. {{address.Address2}}.
+            {{address.Address1}}
         </h3>
         <p md-line *ngIf="!address.editing">
-            {{address.City}}, {{address.State}}, {{address.Country}}
+            {{address.Address2}}. {{address.City}}, {{address.State}}, {{address.Country}}
         </p>
-      </md-list-item>
-    </md-list>
-  </div>
-</form>
+        <div md-line *ngIf="address.editing">
+            <md-select placeholder="Type" [(ngModel)]="addrEdit.Type" required>
+                <md-option value="A">Account</md-option>
+                <md-option value="M">Mailing</md-option>
+                <md-option value="L">Legal</md-option>
+            </md-select>
+            <md-input-container>
+                <input mdInput placeholder="Address1" [(ngModel)]="addrEdit.Address1" required/>
+            </md-input-container>
+            <md-input-container>
+                <input mdInput  placeholder="Address2" [(ngModel)]="addrEdit.Address2" required/>
+            </md-input-container>
+            <md-select placeholder="Customer" *ngIf="address.editing" [(ngModel)]="addrEdit.CustomerId" required>
+                <md-option *ngFor="let customer of customers;let i=index;" [value]="customer.Id">{{customer.Name}}</md-option>
+            </md-select>
+        </div>
+        <div md-line *ngIf="address.editing">
+            <md-select placeholder="Country" [(ngModel)]="addrEdit.CountryId" (change)="onChangeCountry()" required>
+                <md-option *ngFor="let country of countries;" [value]="country.Id">{{country.Name}}</md-option>
+            </md-select>
+            <md-select placeholder="State" [(ngModel)]="addrEdit.StateId" (change)="onChangeState()" required>
+                <md-option *ngFor="let state of states;" [value]="state.Id">{{state.Name}}</md-option>
+            </md-select>
+            <md-select placeholder="City" [(ngModel)]="addrEdit.CityId" required>
+                <md-option *ngFor="let city of cities;" [value]="city.Id">{{city.Name}}</md-option>
+            </md-select>
+            <md-input-container>
+                <input mdInput placeholder="Zip" type="number" [(ngModel)]="addrEdit.Zip" required>
+            </md-input-container>
+        </div>
+        <div class="maddr-fill"></div>
+        
+        <button md-raised-button *ngIf="address.editing" color="primary" (click)="saveAddress(i)"><md-icon>save</md-icon>Save</button>
+        <button md-raised-button *ngIf="address.editing" color="warn" (click)="cancelEditAddress(i)"><md-icon>cancel</md-icon>Cancel</button>
+        
+        <!--a md-raised-button color="primary" [routerLink]="['/address',address.Id]"><md-icon>edit</md-icon> Edit</a-->
+        <button md-raised-button *ngIf="!address.editing" color="primary" (click)="editInlineAddress(i)"><md-icon>border_color</md-icon>Edit</button>
+        <button md-raised-button *ngIf="!address.editing" color="warn" (click)="deleteAddress(i)"><md-icon>delete</md-icon>Delete</button>
+
+        <md-progress-bar md-line *ngIf="address.saving" color="primary" mode="indeterminate"></md-progress-bar>
+    </md-list-item>
+  </md-list>
+</div>
 <!--pre>{{ customerForm.value | json}}</pre-->

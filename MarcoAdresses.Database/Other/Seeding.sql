@@ -6968,7 +6968,19 @@ GO
 
 INSERT INTO Addresses(Id, Type, Address1, Address2, CityId, Zip, CustomerId) VALUES
 (1, 'M', 'Carrera 84aa #35-8','Simon Bolivar Laureles', 135, 11111, 1),
-(2, 'L', '7030 Sandy Forks Rd.','Manhattan', 6224, 22222, 2)
+(2, 'L', '7030 Sandy Forks Rd.','Manhattan', 6224, 22222, 2),
+(3, 'A', '2300 Traverwood Dr.','Ann Arbor', 1919, 33333, 3),
+(4, 'M', '9606 North MoPac Expressway','', 1168, 44444, 4),
+(5, 'L', '2600 Pearl Street','', 2412, 55555, 5),
+(6, 'A', '19510 Jamboree Road','', 2102, 66666, 6),
+(7, 'M', '1450 Brickell Ave','Ste 900', 2981, 77777, 1),
+(8, 'L', '1600 Amphitheatre Parkway','', 2186, 88888, 2),
+(9, 'A', '345 Spear Street','', 2279, 99999, 3),
+(10, 'M', '803 11th Avenue','', 2332, 100100, 4),
+(11, 'L', '10 10th Street NE','', 3378, 110110, 5),
+(12, 'A', '320 N. Morgan','Suite 600', 4088, 120120, 6),
+(13, 'M', '340 Main Street','', 2148, 130130, 1),
+(14, 'L', '111 8th Avenue','', 6224, 140140, 2)
 GO
 
 SET IDENTITY_INSERT Addresses OFF

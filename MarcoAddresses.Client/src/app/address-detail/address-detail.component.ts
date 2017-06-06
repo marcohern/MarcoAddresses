@@ -38,7 +38,7 @@ export class AddressDetailComponent implements OnInit {
     this.addressForm = this.fb.group({
       Type: ['', Validators.required],
       Address1: ['', Validators.required],
-      Address2: ['', Validators.required],
+      Address2: [''],
       CountryId: ['', Validators.required],
       StateId: ['', Validators.required],
       CityId: ['', Validators.required],

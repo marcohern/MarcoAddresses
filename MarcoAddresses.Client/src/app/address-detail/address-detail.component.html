@@ -20,7 +20,7 @@
       </md-input-container>
     </md-list-item>
     <md-list-item>
-      <md-select placeholder="Customer" formControlName="CustomerId" [disabled]="disableCustomer" required>
+      <md-select placeholder="Customer" formControlName="CustomerId" [disabled]="disableCustomer">
         <md-option *ngFor="let customer of customers" [value]="customer.Id">{{customer.Name}}</md-option>
       </md-select>
     </md-list-item>

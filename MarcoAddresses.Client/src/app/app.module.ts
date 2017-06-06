@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MessagingService } from './messaging.service';
 import { RequestService } from './request.service';
 import { AddressesService } from './addresses.service';
 import { CustomerService } from './customer.service';
@@ -70,7 +71,7 @@ import { AddressInlineComponent } from './address-inline/address-inline.componen
     MdSelectModule,
     MdSnackBarModule
   ],
-  providers: [RequestService,AddressesService, CustomerService],
+  providers: [RequestService,AddressesService, CustomerService,MessagingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

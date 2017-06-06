@@ -1,3 +1,4 @@
+<h2>Customer Details</h2>
 <a md-raised-button color="accent" [routerLink]="['/customers']"><md-icon>arrow_back</md-icon> Back</a>
 <form [formGroup]="customerForm" (ngSubmit)="saveCustomer(customerForm.value)">
   <md-list>
@@ -18,7 +19,7 @@
 </form>
 <div *ngIf="editing">
   <h3>Addresses</h3>
-  <!--a md-raised-button color="primary"><md-icon>plus</md-icon> Add Address</a-->
+  <a md-raised-button color="primary" [routerLink]="['/customer/',customerId,'add_address']">Add Address</a>
   <md-list>
     <md-list-item *ngFor="let address of addresses;let i=index;">
         <md-icon md-list-icon *ngIf="!address.editing">place</md-icon>

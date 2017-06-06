@@ -6,6 +6,7 @@ import { Address } from '../models/address';
 import { Option } from '../models/option';
 import {MdSnackBar} from '@angular/material';
 
+import { MessagingService } from '../messaging.service';
 import { CustomerService } from '../customer.service';
 import { AddressesService } from '../addresses.service';
 
@@ -33,7 +34,8 @@ export class CustomerDetailComponent implements OnInit {
     private as:AddressesService,
     private router:Router,
     private route:ActivatedRoute,
-    private snackBar:MdSnackBar) { }
+    private snackBar:MdSnackBar,
+    private msg:MessagingService) { }
 
   ngOnInit() {
     this.customerForm = this.fb.group({
@@ -69,6 +71,12 @@ export class CustomerDetailComponent implements OnInit {
     this.cs.save(customer).subscribe(data => {
       this.router.navigate(['/customers']);
     });
+  }
+
+  addAddress() {
+    let id = this.route.snapshot.params['id'];
+    this.msg.sendDisableCustomerField(id);
+    this.router.navigate(['/address/add']);
   }
 
   editInlineAddress(i) {

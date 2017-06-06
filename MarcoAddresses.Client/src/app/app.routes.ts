@@ -16,6 +16,7 @@ const routes: Routes = [
     { path: 'address/:id'     , component: AddressDetailComponent },
     { path: 'customers'       , component: CustomerListComponent },
     { path: 'customer/add'    , component: CustomerDetailComponent },
+    { path: 'customer/:cid/add_address', component: AddressDetailComponent },
     { path: 'customer/:id'    , component: CustomerDetailComponent },
     { path: ''  , redirectTo: 'welcome', pathMatch: 'full' },
     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }

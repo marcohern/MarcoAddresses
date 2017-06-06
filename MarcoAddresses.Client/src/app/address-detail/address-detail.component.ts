@@ -4,7 +4,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Address } from '../models/address';
 import { Option } from '../models/option';
 
-import { AddressesService } from '../addresses.service'
+import { MessagingService } from '../messaging.service';
+import { AddressesService } from '../addresses.service';
 
 @Component({
   selector: 'app-address-detail',
@@ -18,20 +19,22 @@ export class AddressDetailComponent implements OnInit {
   states:Option[];
   cities:Option[];
   customers:Option[];
+  backRoute:any[] = ['/addresses'];
 
   loadingCountries:boolean = false;
   loadingStates:boolean = false;
   loadingCities:boolean = false;
   clearValues:boolean = true;
+  disableCustomer:boolean = false;
 
   constructor(
     private fb:FormBuilder,
     private as:AddressesService,
     private route:ActivatedRoute,
-    private router:Router) { }
+    private router:Router,
+    private msg:MessagingService) { }
 
   ngOnInit() {
-    
     this.addressForm = this.fb.group({
       Type: ['', Validators.required],
       Address1: ['', Validators.required],
@@ -64,6 +67,15 @@ export class AddressDetailComponent implements OnInit {
         this.getCities(address.StateId);
         this.clearValues = true;
       });
+    }
+    
+    let cid = this.route.snapshot.params['cid'];
+    if (cid) {
+      let customerId = parseInt(cid);
+      this.backRoute = ['/customer', customerId];
+      this.addressForm.controls.CustomerId.setValue(customerId);
+      this.disableCustomer = true;
+      console.log(cid, this.addressForm.value);
     }
   }
 
@@ -130,7 +142,7 @@ export class AddressDetailComponent implements OnInit {
     };
 
     this.as.save(address).subscribe(result => {
-      this.router.navigate(['/addresses']);
+      this.router.navigate(this.backRoute);
     });
   }
 
